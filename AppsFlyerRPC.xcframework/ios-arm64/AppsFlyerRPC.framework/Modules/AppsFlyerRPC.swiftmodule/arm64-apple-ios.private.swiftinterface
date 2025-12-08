@@ -1,0 +1,182 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AppsFlyerRPC
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import AppsFlyerLib
+@_exported import AppsFlyerRPC
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct AnyCodable : Swift.Codable {
+  public let value: Any
+  public init(_ value: Any)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct AFRPCRequest : Swift.Codable {
+  public let id: Swift.String?
+  public let method: Swift.String
+  public let params: [Swift.String : AppsFlyerRPC.AnyCodable]
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(id: Swift.String?, method: Swift.String, params: [Swift.String : AppsFlyerRPC.AnyCodable])
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AFRPCResponse : Swift.Codable {
+  public let id: Swift.String?
+  public let result: AppsFlyerRPC.AnyCodable?
+  public let error: AppsFlyerRPC.AFRPCError?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(id: Swift.String?, result: AppsFlyerRPC.AnyCodable? = nil, error: AppsFlyerRPC.AFRPCError? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func success(id: Swift.String?, result: Any? = nil) -> AppsFlyerRPC.AFRPCResponse
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func failure(id: Swift.String?, error: AppsFlyerRPC.AFRPCError) -> AppsFlyerRPC.AFRPCResponse
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AFRPCError : Swift.Codable {
+  public let code: Swift.Int
+  public let message: Swift.String
+  public let details: [Swift.String : AppsFlyerRPC.AnyCodable]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(code: Swift.Int, message: Swift.String, details: [Swift.String : AppsFlyerRPC.AnyCodable]? = nil)
+  #endif
+  public static let invalidJSON: Swift.Int
+  public static let notFound: Swift.Int
+  public static let unprocessableEntity: Swift.Int
+  public static let internalError: Swift.Int
+  public static let serviceUnavailable: Swift.Int
+  public static func invalidJSONError(_ message: Swift.String = "Invalid JSON") -> AppsFlyerRPC.AFRPCError
+  public static func methodNotFound(_ method: Swift.String) -> AppsFlyerRPC.AFRPCError
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func validationError(_ message: Swift.String, details: [Swift.String : Any]? = nil) -> AppsFlyerRPC.AFRPCError
+  #endif
+  public static func internalErrorResponse(_ message: Swift.String = "Internal error") -> AppsFlyerRPC.AFRPCError
+  public static func sdkNotInitialized() -> AppsFlyerRPC.AFRPCError
+  public static func timeout() -> AppsFlyerRPC.AFRPCError
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum AFRPCClientError : Swift.Error {
+  case invalidJSON(Swift.String)
+  case unknownMethod(Swift.String)
+  case validationError(Swift.String, details: [Swift.String : Any]?)
+  case timeout
+  case sdkNotInitialized
+  case internalError(Swift.String)
+  case missingParameter(Swift.String)
+  public var rpcError: AppsFlyerRPC.AFRPCError {
+    get
+  }
+}
+public struct AFRPCEvent : Swift.Codable {
+  public let event: Swift.String
+  public let data: AppsFlyerRPC.AnyCodable?
+  public let timestamp: Swift.Int64
+  public let origin: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(event: Swift.String, data: Any? = nil, timestamp: Swift.Int64? = nil, origin: Swift.String = "ios")
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol AFRPCTypedRequest {
+  static var methodName: Swift.String { get }
+}
+public struct AFRPCInitRequest : AppsFlyerRPC.AFRPCTypedRequest {
+  public static let methodName: Swift.String
+  public let devKey: Swift.String
+  public let appId: Swift.String
+  public init(from params: [Swift.String : Any]) throws
+}
+public struct AFRPCRegisterConversionListenerRequest : AppsFlyerRPC.AFRPCTypedRequest {
+  public static let methodName: Swift.String
+  public let isEnabled: Swift.Bool
+  public init(from params: [Swift.String : Any]) throws
+}
+public struct AFRPCRegisterDeeplinkListenerRequest : AppsFlyerRPC.AFRPCTypedRequest {
+  public static let methodName: Swift.String
+  public let isEnabled: Swift.Bool
+  public init(from params: [Swift.String : Any]) throws
+}
+public struct AFRPCIsDebugRequest : AppsFlyerRPC.AFRPCTypedRequest {
+  public static let methodName: Swift.String
+  public let isDebug: Swift.Bool
+  public init(from params: [Swift.String : Any]) throws
+}
+public struct AFRPCWaitForATTRequest : AppsFlyerRPC.AFRPCTypedRequest {
+  public static let methodName: Swift.String
+  public let timeout: Foundation.TimeInterval
+  public init(from params: [Swift.String : Any]) throws
+}
+public struct AFRPCStartRequest : AppsFlyerRPC.AFRPCTypedRequest {
+  public static let methodName: Swift.String
+  public init(from params: [Swift.String : Any]) throws
+}
+public struct AFRPCLogEventRequest : AppsFlyerRPC.AFRPCTypedRequest {
+  public static let methodName: Swift.String
+  public let eventName: Swift.String
+  public let eventValues: [Swift.String : Any]?
+  public init(from params: [Swift.String : Any]) throws
+}
+public enum AFRPCParsedRequest {
+  case initRequest(AppsFlyerRPC.AFRPCInitRequest)
+  case registerConversionListenerRequest(AppsFlyerRPC.AFRPCRegisterConversionListenerRequest)
+  case registerDeeplinkListenerRequest(AppsFlyerRPC.AFRPCRegisterDeeplinkListenerRequest)
+  case isDebugRequest(AppsFlyerRPC.AFRPCIsDebugRequest)
+  case waitForATTRequest(AppsFlyerRPC.AFRPCWaitForATTRequest)
+  case startRequest(AppsFlyerRPC.AFRPCStartRequest)
+  case logEventRequest(AppsFlyerRPC.AFRPCLogEventRequest)
+}
+public struct AFRPCParser {
+  public static func parseRequest(from jsonString: Swift.String) throws -> AppsFlyerRPC.AFRPCRequest
+  public static func validateMethod(_ method: Swift.String) throws
+  public static func parseTypedRequest(from rpcRequest: AppsFlyerRPC.AFRPCRequest) throws -> AppsFlyerRPC.AFRPCParsedRequest
+  public static func encodeResponse(_ response: AppsFlyerRPC.AFRPCResponse) throws -> Swift.String
+  public static func encodeEvent(_ event: AppsFlyerRPC.AFRPCEvent) throws -> Swift.String
+}
+@objc @available(iOS 13.0, *)
+public class AFRPCRequestHandler : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(eventEmitter: ((AppsFlyerRPC.AFRPCEvent) -> Swift.Void)? = nil)
+  #endif
+  public func setEventEmitter(_ emitter: @escaping (AppsFlyerRPC.AFRPCEvent) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func handle(request: AppsFlyerRPC.AFRPCParsedRequest, requestId: Swift.String?) async -> AppsFlyerRPC.AFRPCResponse
+  #endif
+  @objc deinit
+}
+@available(iOS 13.0, *)
+extension AppsFlyerRPC.AFRPCRequestHandler : AppsFlyerLib.AppsFlyerLibDelegate {
+  @objc dynamic public func onConversionDataSuccess(_ conversionInfo: [Swift.AnyHashable : Any])
+  @objc dynamic public func onConversionDataFail(_ error: any Swift.Error)
+  @objc dynamic public func onAppOpenAttribution(_ attributionData: [Swift.AnyHashable : Any])
+  @objc dynamic public func onAppOpenAttributionFailure(_ error: any Swift.Error)
+}
+@available(iOS 13.0, *)
+extension AppsFlyerRPC.AFRPCRequestHandler : AppsFlyerLib.DeepLinkDelegate {
+  @objc dynamic public func didResolveDeepLink(_ result: AppsFlyerLib.DeepLinkResult)
+}
+@available(iOS 13.0, *)
+final public class AFRPCClient {
+  public init(eventEmitter: @escaping (Swift.String) -> Swift.Void)
+  final public func execute(jsonRequest: Swift.String) async -> Swift.String
+  final public func emitEvent(_ event: AppsFlyerRPC.AFRPCEvent)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+@objc public class AppsFlyerRPCBridge : ObjectiveC.NSObject {
+  @objc public static let shared: AppsFlyerRPC.AppsFlyerRPCBridge
+  @available(iOS 13.0, *)
+  @objc public func executeJson(_ jsonRequest: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc public func setEventHandler(_ handler: @escaping (Swift.String) -> Swift.Void)
+  @objc public func removeEventHandler()
+  @objc deinit
+}

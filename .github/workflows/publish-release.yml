@@ -1,0 +1,176 @@
+name: "Publish Release"
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [closed]
+    branches: [main]
+
+jobs:
+  publish:
+    # Only run when a releases/* branch PR is merged to main
+    if: >
+      github.event.pull_request.merged == true &&
+      startsWith(github.event.pull_request.head.ref, 'releases/')
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Extract version from branch name
+        id: extract_version
+        run: |
+          set -e
+          
+          # Extract version from branch name (e.g., releases/1.x.x/1.0.x/1.0.0_rc1 -> 1.0.0)
+          BRANCH_PATH=$(echo "${{ github.event.pull_request.head.ref }}" | sed 's|releases/||')
+          
+          # Get the last part of the path and extract just the version number
+          LAST_PART=$(echo "$BRANCH_PATH" | sed 's|.*/||')
+          VERSION=$(echo "$LAST_PART" | sed 's|_[a-zA-Z0-9]*$||')
+          
+          # Validate version format (X.Y.Z)
+          if ! [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "ERROR: Invalid version format: $VERSION" >&2
+            echo "Expected format: X.Y.Z (e.g., 1.0.0)" >&2
+            exit 1
+          fi
+          
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          
+          echo "Branch path: $BRANCH_PATH"
+          echo "Version: $VERSION"
+
+      - name: Verify tag exists
+        env:
+          VERSION: ${{ steps.extract_version.outputs.version }}
+        run: |
+          set -e
+          
+          # Verify the tag exists (created in prepare-release workflow)
+          if ! git tag -l "$VERSION" | grep -q "$VERSION"; then
+            echo "ERROR: Tag $VERSION not found. It should have been created in prepare-release workflow." >&2
+            exit 1
+          fi
+          
+          echo "✅ Tag $VERSION verified"
+
+      - name: Create release artifacts
+        env:
+          VERSION: ${{ steps.extract_version.outputs.version }}
+        run: |
+          set -e
+          
+          # Create zip artifacts
+          ./scripts/zip_artifacts.sh
+          
+          echo "✅ Release artifacts created"
+
+      - name: Create GitHub release
+        id: create_release
+        env:
+          VERSION: ${{ steps.extract_version.outputs.version }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          
+          # Prepare release title and notes
+          TITLE="$VERSION"
+          NOTES="Release $VERSION
+
+## Installation
+
+### CocoaPods
+\`\`\`ruby
+pod 'AppsFlyerRPC', '$VERSION'
+\`\`\`
+
+### Swift Package Manager
+\`\`\`swift
+.package(url: \"https://github.com/AppsFlyerSDK/appsflyer-apple-rpc.git\", from: \"$VERSION\")
+\`\`\`
+
+### Carthage Static
+\`\`\`
+binary \"https://raw.githubusercontent.com/AppsFlyerSDK/appsflyer-apple-rpc/main/Carthage/AppsFlyerRPC-static.json\" == $VERSION
+\`\`\`
+
+### Carthage Dynamic
+\`\`\`
+binary \"https://raw.githubusercontent.com/AppsFlyerSDK/appsflyer-apple-rpc/main/Carthage/AppsFlyerRPC-dynamic.json\" == $VERSION
+\`\`\`
+
+## What's Included
+- Static XCFramework (\`AppsFlyerRPC-static.xcframework.zip\`)
+- Dynamic XCFramework (\`AppsFlyerRPC-dynamic.xcframework.zip\`)
+"
+          
+          # Create release with artifacts
+          gh release create "$VERSION" \
+            --title "$TITLE" \
+            --notes "$NOTES" \
+            AppsFlyerRPC-static.xcframework.zip \
+            AppsFlyerRPC-dynamic.xcframework.zip
+          
+          # Get release URL
+          RELEASE_URL="https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/releases/download/$VERSION"
+          echo "release_url=$RELEASE_URL" >> $GITHUB_OUTPUT
+          
+          echo "✅ GitHub release created: $RELEASE_URL"
+
+      - name: Publish to CocoaPods
+        id: cocoapods
+        continue-on-error: true
+        env:
+          VERSION: ${{ steps.extract_version.outputs.version }}
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+        run: |
+          set -e
+          
+          # Only attempt if we have the token
+          if [[ -z "$COCOAPODS_TRUNK_TOKEN" ]]; then
+            echo "Skipping CocoaPods publish - no trunk token provided"
+            exit 0
+          fi
+          
+          gem install cocoapods
+          pod repo update
+          pod trunk push AppsFlyerRPC.podspec --allow-warnings
+          
+          echo "✅ CocoaPods published successfully"
+
+      - name: Report CocoaPods status
+        if: always()
+        run: |
+          if [[ "${{ steps.cocoapods.outcome }}" == "success" ]]; then
+            echo "✅ CocoaPods: Published successfully"
+          else
+            echo "❌ CocoaPods: Failed to publish"
+            echo "   Manual action required: Run 'pod trunk push AppsFlyerRPC.podspec --allow-warnings' manually"
+          fi
+
+      - name: Workflow Summary
+        if: always()
+        env:
+          VERSION: ${{ steps.extract_version.outputs.version }}
+          RELEASE_URL: ${{ steps.create_release.outputs.release_url }}
+        run: |
+          echo "## Release Workflow Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Version**: $VERSION" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # CocoaPods status
+          if [[ "${{ steps.cocoapods.outcome }}" == "success" ]]; then
+            echo "✅ **CocoaPods**: Published" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "❌ **CocoaPods**: Failed - Manual action required" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Release**: $RELEASE_URL" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Release workflow complete" >> $GITHUB_STEP_SUMMARY
+
