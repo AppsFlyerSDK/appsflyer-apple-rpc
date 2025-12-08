@@ -389,100 +389,198 @@ git push
 
 ---
 
-## Manual Release (If Workflows Fail)
+## Simple Explanation: How It Works
 
-If workflows are not working, you can release manually:
+### 🎯 The Big Picture
 
-### 1. Update Version Files
+Think of the release process as a **two-step automation**:
+
+```
+Step 1: PREPARE     →     Step 2: PUBLISH
+(You create branch)   →   (You merge PR)
+   ↓                        ↓
+Automation does:         Automation does:
+• Update versions        • Create release
+• Create tag             • Upload files
+• Open PR                • Publish to CocoaPods
+```
+
+### 🔄 Real-World Example
+
+**Scenario**: You want to release version `1.0.0`
+
+#### What You Do (2 actions):
 
 ```bash
+# 1️⃣ Create & push branch
+git checkout -b releases/1.x.x/1.0.x/1.0.0
+git push origin releases/1.x.x/1.0.x/1.0.0
+
+# 2️⃣ Review & merge PR (after automation creates it)
+# Done! ✅
+```
+
+#### What Automation Does (Everything else):
+
+**After Step 1** (push branch):
+- ✅ Reads "1.0.0" from branch name
+- ✅ Updates Carthage files
+- ✅ Updates Podspec
+- ✅ Updates Package.swift
+- ✅ Updates README
+- ✅ Creates git tag `1.0.0`
+- ✅ Opens PR to main
+
+**After Step 2** (merge PR):
+- ✅ Creates ZIP files
+- ✅ Creates GitHub release
+- ✅ Uploads static & dynamic XCFrameworks
+- ✅ Publishes to CocoaPods
+
+### 🎬 Visual Timeline
+
+```
+Time    You                    Automation
+────────────────────────────────────────────────────────────
+09:00   Create branch          
+        releases/1.x.x/
+        1.0.x/1.0.0
+                               
+09:01   Push to GitHub         🤖 Workflow starts...
+                               
+09:03                          ✅ Versions updated
+                               ✅ Tag created
+                               ✅ PR opened
+                               
+09:10   Review PR
+        (check versions)
+        
+09:15   Merge PR               🤖 Workflow starts...
+                               
+09:17                          ✅ ZIPs created
+                               ✅ Release published
+                               ✅ CocoaPods updated
+                               
+09:20                          🎉 RELEASE LIVE!
+```
+
+### 💡 Key Concepts
+
+#### Branch Name = Version Number
+
+The workflow extracts the version from your branch name:
+
+| Branch Name | Version Extracted | Valid? |
+|-------------|-------------------|--------|
+| `releases/1.x.x/1.0.x/1.0.0` | `1.0.0` | ✅ |
+| `releases/1.x.x/1.0.x/1.0.0_rc1` | `1.0.0` | ✅ (ignores _rc1) |
+| `releases/2.x.x/2.1.x/2.1.5` | `2.1.5` | ✅ |
+| `releases/1.0.0` | ❌ Invalid | Use full path |
+| `releases/v1.0.0` | ❌ Invalid | No 'v' prefix |
+
+#### Two XCFrameworks Required
+
+Before pushing your release branch, ensure both exist:
+
+```bash
+# Static (in root)
+AppsFlyerRPC.xcframework/
+  ├── ios-arm64/
+  └── ios-arm64_x86_64-simulator/
+
+# Dynamic (in Dynamic folder)
+Dynamic/AppsFlyerRPC.xcframework/
+  ├── ios-arm64/
+  └── ios-arm64_x86_64-simulator/
+```
+
+#### What Gets Updated Automatically
+
+| File | What Changes | Example |
+|------|--------------|---------|
+| `Carthage/AppsFlyerRPC-static.json` | New version entry | `"1.0.0": "https://..."` |
+| `Carthage/AppsFlyerRPC-dynamic.json` | New version entry | `"1.0.0": "https://..."` |
+| `AppsFlyerRPC.podspec` | Version number | `s.version = "1.0.0"` |
+| `Package.swift` | URL + checksum | New download link & hash |
+| `README.md` | Version examples | Updated installation code |
+
+---
+
+## Quick Reference
+
+### ✅ Checklist Before Release
+
+```bash
+# 1. XCFrameworks exist?
+ls AppsFlyerRPC.xcframework/
+ls Dynamic/AppsFlyerRPC.xcframework/
+
+# 2. On correct branch?
+git checkout main
+git pull
+
+# 3. Ready to release? Create branch!
+git checkout -b releases/1.x.x/1.0.x/1.0.0
+git push origin releases/1.x.x/1.0.x/1.0.0
+```
+
+### 🔍 Where to Check Progress
+
+| What | Where to Look |
+|------|---------------|
+| Workflow running? | https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/actions |
+| PR created? | https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/pulls |
+| Release published? | https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/releases |
+| CocoaPods updated? | https://cocoapods.org/pods/AppsFlyerRPC |
+
+### 🆘 Something Wrong?
+
+| Problem | Quick Fix |
+|---------|-----------|
+| Workflow didn't start | Check branch name matches `releases/**` |
+| Missing XCFrameworks | Copy them and push again |
+| Wrong version in PR | Close PR, delete branch, recreate with correct name |
+| Tag already exists | Delete tag: `git push origin :refs/tags/1.0.0` |
+
+---
+
+## Manual Release (Emergency Fallback)
+
+If automation completely fails, run these 5 commands:
+
+```bash
+# 1. Update versions
 ./scripts/update_carthage.sh 1.0.0
 ./scripts/update_podspec.sh 1.0.0
 ./scripts/update_spm.sh 1.0.0
 ./scripts/update_readme.sh 1.0.0
-```
 
-### 2. Create Tag
-
-```bash
+# 2. Tag & push
 git tag 1.0.0 -m "Release 1.0.0"
 git push origin 1.0.0
-```
 
-### 3. Create Release Artifacts
-
-```bash
+# 3. Create ZIPs
 ./scripts/zip_artifacts.sh
-```
 
-### 4. Create GitHub Release
-
-```bash
+# 4. GitHub release
 gh release create 1.0.0 \
   --title "1.0.0" \
   --notes "Release 1.0.0" \
   AppsFlyerRPC-static.xcframework.zip \
   AppsFlyerRPC-dynamic.xcframework.zip
-```
 
-### 5. Publish to CocoaPods
-
-```bash
+# 5. CocoaPods
 pod trunk push AppsFlyerRPC.podspec --allow-warnings
 ```
 
 ---
 
-## Additional Workflows
-
-### Issue Management Workflows
-
-The repository also includes automated issue management:
-
-1. **`close_inactive_issues.yml`**
-   - Runs daily at 10:00 UTC
-   - Auto-closes stale issues
-
-2. **`responseToSupportIssue.yml`**
-   - Triggers when issue is labeled as 'support'
-   - Auto-responds with support contact info
-
-3. **`responseToSupportIssueOnOpen.yml`**
-   - Triggers when new issue is opened
-   - Welcomes user and provides support guidance
-
----
-
-## Tips & Best Practices
-
-### ✅ Do's
-
-- Always test XCFrameworks locally before releasing
-- Use semantic versioning (MAJOR.MINOR.PATCH)
-- Review PR carefully before merging
-- Keep `main` and `development` branches in sync
-- Document changes in release notes
-
-### ❌ Don'ts
-
-- Don't skip XCFramework validation
-- Don't manually edit version files (use scripts)
-- Don't force-push to release branches
-- Don't delete release branches immediately (keep for reference)
-- Don't skip workflow reviews
-
----
-
 ## Questions?
 
-For questions or issues:
-
-- **Internal**: Contact the Mobile SDK team
+- **Internal**: Mobile SDK team
 - **External**: support@appsflyer.com
 - **Issues**: https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/issues
 
 ---
 
-**Last Updated**: December 2025  
-**Workflows Version**: 1.0
-
+*Last Updated: December 2025*
