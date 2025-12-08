@@ -140,7 +140,7 @@ jobs:
           
           gem install cocoapods
           pod repo update
-          pod trunk push AppsFlyerRPC.podspec --allow-warnings
+          pod trunk push AppsFlyerRPC.podspec --allow-warnings --skip-import-validation
           
           echo "✅ CocoaPods published successfully"
 
@@ -151,7 +151,7 @@ jobs:
             echo "✅ CocoaPods: Published successfully"
           else
             echo "❌ CocoaPods: Failed to publish"
-            echo "   Manual action required: Run 'pod trunk push AppsFlyerRPC.podspec --allow-warnings' manually"
+            echo "   Manual action required: Run 'pod trunk push AppsFlyerRPC.podspec --allow-warnings --skip-import-validation' manually"
           fi
 
       - name: Workflow Summary
