@@ -331,6 +331,28 @@ Future<Map<String, dynamic>?> executeRPC(String method, Map<String, dynamic> par
 
 ---
 
+## For Maintainers
+
+### Release Process
+
+This repository uses automated workflows to streamline releases. See the comprehensive guide:
+
+📖 **[Workflows Guide](.github/WORKFLOWS.md)** - Complete documentation on the automated release process
+
+**Quick Start**:
+```bash
+# 1. Create release branch
+git checkout -b releases/1.x.x/1.0.x/1.0.0
+
+# 2. Push (triggers automation)
+git push origin releases/1.x.x/1.0.x/1.0.0
+
+# 3. Review & merge PR
+# 4. Release published automatically!
+```
+
+---
+
 ## License
 
 Copyright © 2024 AppsFlyer Ltd. All rights reserved.
