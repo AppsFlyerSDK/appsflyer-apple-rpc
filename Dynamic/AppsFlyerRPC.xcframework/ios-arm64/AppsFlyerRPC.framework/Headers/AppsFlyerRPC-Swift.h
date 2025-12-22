@@ -306,6 +306,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+/// Main RPC request handler coordinator.
+/// Single Responsibility: Only coordinates handlers and manages lifecycle.
+/// Dependency Inversion: Depends on abstractions (protocols), not concrete implementations.
 SWIFT_CLASS("_TtC12AppsFlyerRPC19AFRPCRequestHandler") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @interface AFRPCRequestHandler : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

@@ -2891,50 +2891,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "isEnabled",
-            "printedName": "isEnabled",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AppsFlyerRPC38AFRPCRegisterConversionListenerRequestV9isEnabledSbvp",
-            "mangledName": "$s12AppsFlyerRPC38AFRPCRegisterConversionListenerRequestV9isEnabledSbvp",
-            "moduleName": "AppsFlyerRPC",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AppsFlyerRPC38AFRPCRegisterConversionListenerRequestV9isEnabledSbvg",
-                "mangledName": "$s12AppsFlyerRPC38AFRPCRegisterConversionListenerRequestV9isEnabledSbvg",
-                "moduleName": "AppsFlyerRPC",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -3056,50 +3012,6 @@
                 "mangledName": "$s12AppsFlyerRPC36AFRPCRegisterDeeplinkListenerRequestV10methodNameSSvgZ",
                 "moduleName": "AppsFlyerRPC",
                 "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isEnabled",
-            "printedName": "isEnabled",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:12AppsFlyerRPC36AFRPCRegisterDeeplinkListenerRequestV9isEnabledSbvp",
-            "mangledName": "$s12AppsFlyerRPC36AFRPCRegisterDeeplinkListenerRequestV9isEnabledSbvp",
-            "moduleName": "AppsFlyerRPC",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12AppsFlyerRPC36AFRPCRegisterDeeplinkListenerRequestV9isEnabledSbvg",
-                "mangledName": "$s12AppsFlyerRPC36AFRPCRegisterDeeplinkListenerRequestV9isEnabledSbvg",
-                "moduleName": "AppsFlyerRPC",
                 "implicit": true,
                 "accessorKind": "get"
               }
@@ -3573,6 +3485,50 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "awaitResponse",
+            "printedName": "awaitResponse",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AppsFlyerRPC17AFRPCStartRequestV13awaitResponseSbvp",
+            "mangledName": "$s12AppsFlyerRPC17AFRPCStartRequestV13awaitResponseSbvp",
+            "moduleName": "AppsFlyerRPC",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AppsFlyerRPC17AFRPCStartRequestV13awaitResponseSbvg",
+                "mangledName": "$s12AppsFlyerRPC17AFRPCStartRequestV13awaitResponseSbvg",
+                "moduleName": "AppsFlyerRPC",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -3830,6 +3786,50 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "awaitResponse",
+            "printedName": "awaitResponse",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AppsFlyerRPC20AFRPCLogEventRequestV13awaitResponseSbvp",
+            "mangledName": "$s12AppsFlyerRPC20AFRPCLogEventRequestV13awaitResponseSbvp",
+            "moduleName": "AppsFlyerRPC",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AppsFlyerRPC20AFRPCLogEventRequestV13awaitResponseSbvg",
+                "mangledName": "$s12AppsFlyerRPC20AFRPCLogEventRequestV13awaitResponseSbvg",
+                "moduleName": "AppsFlyerRPC",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -3865,7 +3865,8 @@
             "mangledName": "$s12AppsFlyerRPC20AFRPCLogEventRequestV4fromACSDySSypG_tKcfc",
             "moduleName": "AppsFlyerRPC",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "throwing": true,
             "init_kind": "Designated"
@@ -3874,6 +3875,385 @@
         "declKind": "Struct",
         "usr": "s:12AppsFlyerRPC20AFRPCLogEventRequestV",
         "mangledName": "$s12AppsFlyerRPC20AFRPCLogEventRequestV",
+        "moduleName": "AppsFlyerRPC",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AFRPCTypedRequest",
+            "printedName": "AFRPCTypedRequest",
+            "usr": "s:12AppsFlyerRPC17AFRPCTypedRequestP",
+            "mangledName": "$s12AppsFlyerRPC17AFRPCTypedRequestP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AFRPCSetPluginInfoRequest",
+        "printedName": "AFRPCSetPluginInfoRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "methodName",
+            "printedName": "methodName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AppsFlyerRPC25AFRPCSetPluginInfoRequestV10methodNameSSvpZ",
+            "mangledName": "$s12AppsFlyerRPC25AFRPCSetPluginInfoRequestV10methodNameSSvpZ",
+            "moduleName": "AppsFlyerRPC",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AppsFlyerRPC25AFRPCSetPluginInfoRequestV10methodNameSSvgZ",
+                "mangledName": "$s12AppsFlyerRPC25AFRPCSetPluginInfoRequestV10methodNameSSvgZ",
+                "moduleName": "AppsFlyerRPC",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "plugin",
+            "printedName": "plugin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AppsFlyerRPC25AFRPCSetPluginInfoRequestV6pluginSSvp",
+            "mangledName": "$s12AppsFlyerRPC25AFRPCSetPluginInfoRequestV6pluginSSvp",
+            "moduleName": "AppsFlyerRPC",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AppsFlyerRPC25AFRPCSetPluginInfoRequestV6pluginSSvg",
+                "mangledName": "$s12AppsFlyerRPC25AFRPCSetPluginInfoRequestV6pluginSSvg",
+                "moduleName": "AppsFlyerRPC",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pluginVersion",
+            "printedName": "pluginVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AppsFlyerRPC25AFRPCSetPluginInfoRequestV13pluginVersionSSvp",
+            "mangledName": "$s12AppsFlyerRPC25AFRPCSetPluginInfoRequestV13pluginVersionSSvp",
+            "moduleName": "AppsFlyerRPC",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AppsFlyerRPC25AFRPCSetPluginInfoRequestV13pluginVersionSSvg",
+                "mangledName": "$s12AppsFlyerRPC25AFRPCSetPluginInfoRequestV13pluginVersionSSvg",
+                "moduleName": "AppsFlyerRPC",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "additionalParams",
+            "printedName": "additionalParams",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AppsFlyerRPC25AFRPCSetPluginInfoRequestV16additionalParamsSDySSypGSgvp",
+            "mangledName": "$s12AppsFlyerRPC25AFRPCSetPluginInfoRequestV16additionalParamsSDySSypGSgvp",
+            "moduleName": "AppsFlyerRPC",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AppsFlyerRPC25AFRPCSetPluginInfoRequestV16additionalParamsSDySSypGSgvg",
+                "mangledName": "$s12AppsFlyerRPC25AFRPCSetPluginInfoRequestV16additionalParamsSDySSypGSgvg",
+                "moduleName": "AppsFlyerRPC",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pluginMapping",
+            "printedName": "pluginMapping",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12AppsFlyerRPC25AFRPCSetPluginInfoRequestV13pluginMappingSDySSSiGvpZ",
+            "mangledName": "$s12AppsFlyerRPC25AFRPCSetPluginInfoRequestV13pluginMappingSDySSSiGvpZ",
+            "moduleName": "AppsFlyerRPC",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12AppsFlyerRPC25AFRPCSetPluginInfoRequestV13pluginMappingSDySSSiGvgZ",
+                "mangledName": "$s12AppsFlyerRPC25AFRPCSetPluginInfoRequestV13pluginMappingSDySSSiGvgZ",
+                "moduleName": "AppsFlyerRPC",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AFRPCSetPluginInfoRequest",
+                "printedName": "AppsFlyerRPC.AFRPCSetPluginInfoRequest",
+                "usr": "s:12AppsFlyerRPC25AFRPCSetPluginInfoRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12AppsFlyerRPC25AFRPCSetPluginInfoRequestV4fromACSDySSypG_tKcfc",
+            "mangledName": "$s12AppsFlyerRPC25AFRPCSetPluginInfoRequestV4fromACSDySSypG_tKcfc",
+            "moduleName": "AppsFlyerRPC",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12AppsFlyerRPC25AFRPCSetPluginInfoRequestV",
+        "mangledName": "$s12AppsFlyerRPC25AFRPCSetPluginInfoRequestV",
         "moduleName": "AppsFlyerRPC",
         "declAttributes": [
           "AccessControl",
@@ -4267,6 +4647,56 @@
             "usr": "s:12AppsFlyerRPC18AFRPCParsedRequestO08logEventE0yAcA08AFRPCLoggE0VcACmF",
             "mangledName": "$s12AppsFlyerRPC18AFRPCParsedRequestO08logEventE0yAcA08AFRPCLoggE0VcACmF",
             "moduleName": "AppsFlyerRPC"
+          },
+          {
+            "kind": "Var",
+            "name": "setPluginInfoRequest",
+            "printedName": "setPluginInfoRequest",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AppsFlyerRPC.AFRPCParsedRequest.Type) -> (AppsFlyerRPC.AFRPCSetPluginInfoRequest) -> AppsFlyerRPC.AFRPCParsedRequest",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AppsFlyerRPC.AFRPCSetPluginInfoRequest) -> AppsFlyerRPC.AFRPCParsedRequest",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AFRPCParsedRequest",
+                        "printedName": "AppsFlyerRPC.AFRPCParsedRequest",
+                        "usr": "s:12AppsFlyerRPC18AFRPCParsedRequestO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AFRPCSetPluginInfoRequest",
+                        "printedName": "AppsFlyerRPC.AFRPCSetPluginInfoRequest",
+                        "usr": "s:12AppsFlyerRPC25AFRPCSetPluginInfoRequestV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AppsFlyerRPC.AFRPCParsedRequest.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AFRPCParsedRequest",
+                        "printedName": "AppsFlyerRPC.AFRPCParsedRequest",
+                        "usr": "s:12AppsFlyerRPC18AFRPCParsedRequestO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12AppsFlyerRPC18AFRPCParsedRequestO013setPluginInfoE0yAcA08AFRPCSetghE0VcACmF",
+            "mangledName": "$s12AppsFlyerRPC18AFRPCParsedRequestO013setPluginInfoE0yAcA08AFRPCSetghE0VcACmF",
+            "moduleName": "AppsFlyerRPC"
           }
         ],
         "declKind": "Enum",
@@ -4538,7 +4968,8 @@
             "mangledName": "$s12AppsFlyerRPC19AFRPCRequestHandlerC12eventEmitterACyAA10AFRPCEventVcSg_tcfc",
             "moduleName": "AppsFlyerRPC",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
@@ -4576,7 +5007,8 @@
             "mangledName": "$s12AppsFlyerRPC19AFRPCRequestHandlerC15setEventEmitteryyyAA10AFRPCEventVcF",
             "moduleName": "AppsFlyerRPC",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4833,6 +5265,7 @@
         "declAttributes": [
           "AccessControl",
           "Available",
+          "RawDocComment",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -5306,6 +5739,192 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppsFlyerLib",
+        "printedName": "AppsFlyerLib",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppsFlyerLib",
+        "printedName": "AppsFlyerLib",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppsFlyerLib",
+        "printedName": "AppsFlyerLib",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppsFlyerLib",
+        "printedName": "AppsFlyerLib",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppsFlyerLib",
+        "printedName": "AppsFlyerLib",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppsFlyerLib",
+        "printedName": "AppsFlyerLib",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppsFlyerLib",
+        "printedName": "AppsFlyerLib",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppsFlyerLib",
+        "printedName": "AppsFlyerLib",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC"
       }
     ],
     "json_format_version": 8
@@ -5384,65 +6003,100 @@
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 1646,
+      "offset": 1415,
       "length": 26,
       "value": "\"registerDeeplinkListener\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 2233,
+      "offset": 1765,
       "length": 9,
       "value": "\"isDebug\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 2656,
+      "offset": 2188,
       "length": 12,
       "value": "\"waitForATT\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 3418,
+      "offset": 2950,
       "length": 7,
       "value": "\"start\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 3713,
+      "offset": 3374,
       "length": 10,
       "value": "\"logEvent\""
     },
     {
+      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 4172,
+      "length": 15,
+      "value": "\"setPluginInfo\""
+    },
+    {
+      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "kind": "Dictionary",
+      "offset": 4793,
+      "length": 892,
+      "value": "[(\"ios_native\", 0), (\"unity\", 1), (\"flutter\", 2), (\"react_native\", 3), (\"adobe_air\", 4), (\"adobe_mobile\", 5), (\"cocos2dx\", 6), (\"cordova\", 7), (\"mparticle\", 8), (\"native_script\", 9), (\"expo\", 10), (\"unreal\", 11), (\"xamarin\", 12), (\"capacitor\", 13), (\"segment\", 14), (\"adobe_swift_aep\", 15)]"
+    },
+    {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCParser.swift",
       "kind": "Array",
-      "offset": 603,
-      "length": 174,
-      "value": "[\"init\", \"registerConversionListener\", \"registerDeeplinkListener\", \"isDebug\", \"waitForATT\", \"start\", \"logEvent\"]"
+      "offset": 660,
+      "length": 199,
+      "value": "[\"init\", \"registerConversionListener\", \"registerDeeplinkListener\", \"isDebug\", \"waitForATT\", \"start\", \"logEvent\", \"setPluginInfo\"]"
     },
     {
-      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/AFRPCRequestHandler.swift",
+      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Router\/AFRPCHandlerRouter.swift",
+      "kind": "Array",
+      "offset": 383,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/State\/AFRPCHandlerStateActor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 341,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/State\/AFRPCHandlerStateActor.swift",
+      "kind": "BooleanLiteral",
+      "offset": 391,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 203,
+      "length": 7,
+      "value": "\"start\""
+    },
+    {
+      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 237,
+      "length": 10,
+      "value": "\"logEvent\""
+    },
+    {
+      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "FloatLiteral",
-      "offset": 243,
+      "offset": 534,
       "length": 3,
       "value": "5.0"
-    },
-    {
-      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/AFRPCRequestHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 326,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/AFRPCRequestHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 376,
-      "length": 5,
-      "value": "false"
     }
   ]
 }
