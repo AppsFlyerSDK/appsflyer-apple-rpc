@@ -90,7 +90,7 @@ AppsFlyerRPC supports both **static** and **dynamic** linking via Carthage.
 Go to the `Carthage` folder in the root of the repository. Open `AppsFlyerRPC-static.json`, click raw, copy and paste the URL of the file to your `Cartfile`:
 
 ```
-binary "https://raw.githubusercontent.com/AppsFlyerSDK/appsflyer-apple-rpc/main/Carthage/AppsFlyerRPC-static.json" == 1.0.0
+binary "https://raw.githubusercontent.com/AppsFlyerSDK/appsflyer-apple-rpc/main/Carthage/AppsFlyerRPC-static.json" == 1.0.1
 ```
 
 #### Dynamic Linking
@@ -98,7 +98,7 @@ binary "https://raw.githubusercontent.com/AppsFlyerSDK/appsflyer-apple-rpc/main/
 For dynamic linking, use `AppsFlyerRPC-dynamic.json`:
 
 ```
-binary "https://raw.githubusercontent.com/AppsFlyerSDK/appsflyer-apple-rpc/main/Carthage/AppsFlyerRPC-dynamic.json" == 1.0.0
+binary "https://raw.githubusercontent.com/AppsFlyerSDK/appsflyer-apple-rpc/main/Carthage/AppsFlyerRPC-dynamic.json" == 1.0.1
 ```
 
 #### Installation

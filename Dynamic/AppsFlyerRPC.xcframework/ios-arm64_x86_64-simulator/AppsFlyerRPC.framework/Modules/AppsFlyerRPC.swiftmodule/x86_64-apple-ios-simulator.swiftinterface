@@ -98,12 +98,10 @@ public struct AFRPCInitRequest : AppsFlyerRPC.AFRPCTypedRequest {
 }
 public struct AFRPCRegisterConversionListenerRequest : AppsFlyerRPC.AFRPCTypedRequest {
   public static let methodName: Swift.String
-  public let isEnabled: Swift.Bool
   public init(from params: [Swift.String : Any]) throws
 }
 public struct AFRPCRegisterDeeplinkListenerRequest : AppsFlyerRPC.AFRPCTypedRequest {
   public static let methodName: Swift.String
-  public let isEnabled: Swift.Bool
   public init(from params: [Swift.String : Any]) throws
 }
 public struct AFRPCIsDebugRequest : AppsFlyerRPC.AFRPCTypedRequest {
@@ -118,12 +116,22 @@ public struct AFRPCWaitForATTRequest : AppsFlyerRPC.AFRPCTypedRequest {
 }
 public struct AFRPCStartRequest : AppsFlyerRPC.AFRPCTypedRequest {
   public static let methodName: Swift.String
+  public let awaitResponse: Swift.Bool
   public init(from params: [Swift.String : Any]) throws
 }
 public struct AFRPCLogEventRequest : AppsFlyerRPC.AFRPCTypedRequest {
   public static let methodName: Swift.String
   public let eventName: Swift.String
   public let eventValues: [Swift.String : Any]?
+  public let awaitResponse: Swift.Bool
+  public init(from params: [Swift.String : Any]) throws
+}
+public struct AFRPCSetPluginInfoRequest : AppsFlyerRPC.AFRPCTypedRequest {
+  public static let methodName: Swift.String
+  public let plugin: Swift.String
+  public let pluginVersion: Swift.String
+  public let additionalParams: [Swift.String : Any]?
+  public static let pluginMapping: [Swift.String : Swift.Int]
   public init(from params: [Swift.String : Any]) throws
 }
 public enum AFRPCParsedRequest {
@@ -134,6 +142,7 @@ public enum AFRPCParsedRequest {
   case waitForATTRequest(AppsFlyerRPC.AFRPCWaitForATTRequest)
   case startRequest(AppsFlyerRPC.AFRPCStartRequest)
   case logEventRequest(AppsFlyerRPC.AFRPCLogEventRequest)
+  case setPluginInfoRequest(AppsFlyerRPC.AFRPCSetPluginInfoRequest)
 }
 public struct AFRPCParser {
   public static func parseRequest(from jsonString: Swift.String) throws -> AppsFlyerRPC.AFRPCRequest
@@ -154,17 +163,6 @@ public class AFRPCRequestHandler : ObjectiveC.NSObject {
   @objc deinit
 }
 @available(iOS 13.0, *)
-extension AppsFlyerRPC.AFRPCRequestHandler : AppsFlyerLib.AppsFlyerLibDelegate {
-  @objc dynamic public func onConversionDataSuccess(_ conversionInfo: [Swift.AnyHashable : Any])
-  @objc dynamic public func onConversionDataFail(_ error: any Swift.Error)
-  @objc dynamic public func onAppOpenAttribution(_ attributionData: [Swift.AnyHashable : Any])
-  @objc dynamic public func onAppOpenAttributionFailure(_ error: any Swift.Error)
-}
-@available(iOS 13.0, *)
-extension AppsFlyerRPC.AFRPCRequestHandler : AppsFlyerLib.DeepLinkDelegate {
-  @objc dynamic public func didResolveDeepLink(_ result: AppsFlyerLib.DeepLinkResult)
-}
-@available(iOS 13.0, *)
 final public class AFRPCClient {
   public init(eventEmitter: @escaping (Swift.String) -> Swift.Void)
   final public func execute(jsonRequest: Swift.String) async -> Swift.String
@@ -179,4 +177,15 @@ final public class AFRPCClient {
   @objc public func setEventHandler(_ handler: @escaping (Swift.String) -> Swift.Void)
   @objc public func removeEventHandler()
   @objc deinit
+}
+@available(iOS 13.0, *)
+extension AppsFlyerRPC.AFRPCRequestHandler : AppsFlyerLib.AppsFlyerLibDelegate {
+  @objc dynamic public func onConversionDataSuccess(_ conversionInfo: [Swift.AnyHashable : Any])
+  @objc dynamic public func onConversionDataFail(_ error: any Swift.Error)
+  @objc dynamic public func onAppOpenAttribution(_ attributionData: [Swift.AnyHashable : Any])
+  @objc dynamic public func onAppOpenAttributionFailure(_ error: any Swift.Error)
+}
+@available(iOS 13.0, *)
+extension AppsFlyerRPC.AFRPCRequestHandler : AppsFlyerLib.DeepLinkDelegate {
+  @objc dynamic public func didResolveDeepLink(_ result: AppsFlyerLib.DeepLinkResult)
 }
