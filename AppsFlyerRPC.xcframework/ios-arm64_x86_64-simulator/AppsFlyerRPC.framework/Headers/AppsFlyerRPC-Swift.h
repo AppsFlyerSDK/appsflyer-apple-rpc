@@ -281,9 +281,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import AppsFlyerLib;
-@import Foundation;
-@import ObjectiveC;
 #endif
 
 #endif
@@ -305,51 +302,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
-/// Main RPC request handler coordinator.
-/// Single Responsibility: Only coordinates handlers and manages lifecycle.
-/// Dependency Inversion: Depends on abstractions (protocols), not concrete implementations.
-SWIFT_CLASS("_TtC12AppsFlyerRPC19AFRPCRequestHandler") SWIFT_AVAILABILITY(ios,introduced=13.0)
-@interface AFRPCRequestHandler : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class AppsFlyerDeepLinkResult;
-SWIFT_AVAILABILITY(ios,introduced=13.0)
-@interface AFRPCRequestHandler (SWIFT_EXTENSION(AppsFlyerRPC)) <AppsFlyerDeepLinkDelegate>
-- (void)didResolveDeepLink:(AppsFlyerDeepLinkResult * _Nonnull)result;
-@end
-
-SWIFT_AVAILABILITY(ios,introduced=13.0)
-@interface AFRPCRequestHandler (SWIFT_EXTENSION(AppsFlyerRPC)) <AppsFlyerLibDelegate>
-- (void)onConversionDataSuccess:(NSDictionary * _Nonnull)conversionInfo;
-- (void)onConversionDataFail:(NSError * _Nonnull)error;
-- (void)onAppOpenAttribution:(NSDictionary * _Nonnull)attributionData;
-- (void)onAppOpenAttributionFailure:(NSError * _Nonnull)error;
-@end
-
-@class NSString;
-SWIFT_CLASS("_TtC12AppsFlyerRPC18AppsFlyerRPCBridge") SWIFT_AVAILABILITY(ios,introduced=13.0)
-@interface AppsFlyerRPCBridge : NSObject
-/// Shared singleton instance
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AppsFlyerRPCBridge * _Nonnull shared;)
-+ (AppsFlyerRPCBridge * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// Execute an RPC request
-/// \param jsonRequest JSON-encoded request string
-///
-/// \param completion Completion handler that receives the JSON-encoded response
-///
-- (void)executeJson:(NSString * _Nonnull)jsonRequest completion:(void (^ _Nonnull)(NSString * _Nonnull))completion SWIFT_AVAILABILITY(ios,introduced=13.0);
-/// Set the event handler for receiving SDK events
-/// \param handler Callback that receives JSON-encoded events
-///
-- (void)setEventHandler:(void (^ _Nonnull)(NSString * _Nonnull))handler;
-/// Remove the event handler
-- (void)removeEventHandler;
-@end
 
 #endif
 #if __has_attribute(external_source_symbol)
@@ -642,9 +594,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import AppsFlyerLib;
-@import Foundation;
-@import ObjectiveC;
 #endif
 
 #endif
@@ -666,51 +615,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
-/// Main RPC request handler coordinator.
-/// Single Responsibility: Only coordinates handlers and manages lifecycle.
-/// Dependency Inversion: Depends on abstractions (protocols), not concrete implementations.
-SWIFT_CLASS("_TtC12AppsFlyerRPC19AFRPCRequestHandler") SWIFT_AVAILABILITY(ios,introduced=13.0)
-@interface AFRPCRequestHandler : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class AppsFlyerDeepLinkResult;
-SWIFT_AVAILABILITY(ios,introduced=13.0)
-@interface AFRPCRequestHandler (SWIFT_EXTENSION(AppsFlyerRPC)) <AppsFlyerDeepLinkDelegate>
-- (void)didResolveDeepLink:(AppsFlyerDeepLinkResult * _Nonnull)result;
-@end
-
-SWIFT_AVAILABILITY(ios,introduced=13.0)
-@interface AFRPCRequestHandler (SWIFT_EXTENSION(AppsFlyerRPC)) <AppsFlyerLibDelegate>
-- (void)onConversionDataSuccess:(NSDictionary * _Nonnull)conversionInfo;
-- (void)onConversionDataFail:(NSError * _Nonnull)error;
-- (void)onAppOpenAttribution:(NSDictionary * _Nonnull)attributionData;
-- (void)onAppOpenAttributionFailure:(NSError * _Nonnull)error;
-@end
-
-@class NSString;
-SWIFT_CLASS("_TtC12AppsFlyerRPC18AppsFlyerRPCBridge") SWIFT_AVAILABILITY(ios,introduced=13.0)
-@interface AppsFlyerRPCBridge : NSObject
-/// Shared singleton instance
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AppsFlyerRPCBridge * _Nonnull shared;)
-+ (AppsFlyerRPCBridge * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// Execute an RPC request
-/// \param jsonRequest JSON-encoded request string
-///
-/// \param completion Completion handler that receives the JSON-encoded response
-///
-- (void)executeJson:(NSString * _Nonnull)jsonRequest completion:(void (^ _Nonnull)(NSString * _Nonnull))completion SWIFT_AVAILABILITY(ios,introduced=13.0);
-/// Set the event handler for receiving SDK events
-/// \param handler Callback that receives JSON-encoded events
-///
-- (void)setEventHandler:(void (^ _Nonnull)(NSString * _Nonnull))handler;
-/// Remove the event handler
-- (void)removeEventHandler;
-@end
 
 #endif
 #if __has_attribute(external_source_symbol)
