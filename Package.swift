@@ -14,8 +14,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AppsFlyerRPC",
-            url: "https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/releases/download/1.0.1/AppsFlyerRPC-static.xcframework.zip",
-            checksum: "CHECKSUM_TO_BE_UPDATED_AFTER_BUILD"
+            url: "https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/releases/download/1.0.2/AppsFlyerRPC-static.xcframework.zip",
+            checksum: "05bde3bb5419927792328d4770281af651c10af6e5c3897eb576b775f32fb492"
         )
     ]
 )
