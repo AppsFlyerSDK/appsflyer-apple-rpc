@@ -36,10 +36,19 @@ public struct AFRPCEvent : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@available(iOS 13.0, *)
-final public class AFRPCClient {
-  public init(eventEmitter: @escaping (Swift.String) -> Swift.Void)
-  final public func execute(jsonRequest: Swift.String) async -> Swift.String
+@objc @available(iOS 13.0, *)
+@objcMembers final public class AFRPCClient : ObjectiveC.NSObject {
+  @objc public init(eventEmitter: @escaping (Swift.String) -> Swift.Void)
+  @objc final public func execute(jsonRequest: Swift.String) async -> Swift.String
   final public func emitEvent(_ event: AppsFlyerRPC.AFRPCEvent)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+@objcMembers final public class AppsFlyerRPCBridge : ObjectiveC.NSObject {
+  @objc public static let shared: AppsFlyerRPC.AppsFlyerRPCBridge
+  @objc @available(iOS 13.0, *)
+  final public func executeJson(_ jsonRequest: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc final public func setEventHandler(_ handler: @escaping (Swift.String) -> Swift.Void)
+  @objc final public func removeEventHandler()
   @objc deinit
 }

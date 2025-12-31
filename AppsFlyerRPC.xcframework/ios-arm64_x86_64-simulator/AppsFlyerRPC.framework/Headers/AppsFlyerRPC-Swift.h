@@ -281,6 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
 #endif
 
 #endif
@@ -302,6 +303,45 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+@class NSString;
+SWIFT_CLASS("_TtC12AppsFlyerRPC11AFRPCClient") SWIFT_AVAILABILITY(ios,introduced=13.0)
+@interface AFRPCClient : NSObject
+/// Initialize the RPC client
+/// \param eventEmitter Callback for emitting events to plugins
+///
+- (nonnull instancetype)initWithEventEmitter:(void (^ _Nonnull)(NSString * _Nonnull))eventEmitter OBJC_DESIGNATED_INITIALIZER;
+/// Execute an RPC request
+/// \param jsonRequest JSON-encoded request string
+///
+///
+/// returns:
+/// JSON-encoded response string
+- (void)executeWithJsonRequest:(NSString * _Nonnull)jsonRequest completionHandler:(void (^ _Nonnull)(NSString * _Nonnull))completionHandler;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS("_TtC12AppsFlyerRPC18AppsFlyerRPCBridge") SWIFT_AVAILABILITY(ios,introduced=13.0)
+@interface AppsFlyerRPCBridge : NSObject
+/// Shared singleton instance
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AppsFlyerRPCBridge * _Nonnull shared;)
++ (AppsFlyerRPCBridge * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Execute an RPC request
+/// \param jsonRequest JSON-encoded request string
+///
+/// \param completion Completion handler that receives the JSON-encoded response
+///
+- (void)executeJson:(NSString * _Nonnull)jsonRequest completion:(void (^ _Nonnull)(NSString * _Nonnull))completion SWIFT_AVAILABILITY(ios,introduced=13.0);
+/// Set the event handler for receiving SDK events
+/// \param handler Callback that receives JSON-encoded events
+///
+- (void)setEventHandler:(void (^ _Nonnull)(NSString * _Nonnull))handler;
+/// Remove the event handler
+- (void)removeEventHandler;
+@end
 
 #endif
 #if __has_attribute(external_source_symbol)
@@ -594,6 +634,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
 #endif
 
 #endif
@@ -615,6 +656,45 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+@class NSString;
+SWIFT_CLASS("_TtC12AppsFlyerRPC11AFRPCClient") SWIFT_AVAILABILITY(ios,introduced=13.0)
+@interface AFRPCClient : NSObject
+/// Initialize the RPC client
+/// \param eventEmitter Callback for emitting events to plugins
+///
+- (nonnull instancetype)initWithEventEmitter:(void (^ _Nonnull)(NSString * _Nonnull))eventEmitter OBJC_DESIGNATED_INITIALIZER;
+/// Execute an RPC request
+/// \param jsonRequest JSON-encoded request string
+///
+///
+/// returns:
+/// JSON-encoded response string
+- (void)executeWithJsonRequest:(NSString * _Nonnull)jsonRequest completionHandler:(void (^ _Nonnull)(NSString * _Nonnull))completionHandler;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS("_TtC12AppsFlyerRPC18AppsFlyerRPCBridge") SWIFT_AVAILABILITY(ios,introduced=13.0)
+@interface AppsFlyerRPCBridge : NSObject
+/// Shared singleton instance
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AppsFlyerRPCBridge * _Nonnull shared;)
++ (AppsFlyerRPCBridge * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Execute an RPC request
+/// \param jsonRequest JSON-encoded request string
+///
+/// \param completion Completion handler that receives the JSON-encoded response
+///
+- (void)executeJson:(NSString * _Nonnull)jsonRequest completion:(void (^ _Nonnull)(NSString * _Nonnull))completion SWIFT_AVAILABILITY(ios,introduced=13.0);
+/// Set the event handler for receiving SDK events
+/// \param handler Callback that receives JSON-encoded events
+///
+- (void)setEventHandler:(void (^ _Nonnull)(NSString * _Nonnull))handler;
+/// Remove the event handler
+- (void)removeEventHandler;
+@end
 
 #endif
 #if __has_attribute(external_source_symbol)

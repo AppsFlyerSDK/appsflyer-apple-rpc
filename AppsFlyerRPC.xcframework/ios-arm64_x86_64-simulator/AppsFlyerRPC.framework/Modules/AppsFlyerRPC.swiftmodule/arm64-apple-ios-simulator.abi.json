@@ -957,7 +957,7 @@
                 "kind": "TypeNominal",
                 "name": "AFRPCClient",
                 "printedName": "AppsFlyerRPC.AFRPCClient",
-                "usr": "s:12AppsFlyerRPC11AFRPCClientC"
+                "usr": "c:@M@AppsFlyerRPC@objc(cs)AFRPCClient"
               },
               {
                 "kind": "TypeFunc",
@@ -979,12 +979,13 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12AppsFlyerRPC11AFRPCClientC12eventEmitterACySSc_tcfc",
+            "usr": "c:@M@AppsFlyerRPC@objc(cs)AFRPCClient(im)initWithEventEmitter:",
             "mangledName": "$s12AppsFlyerRPC11AFRPCClientC12eventEmitterACySSc_tcfc",
             "moduleName": "AppsFlyerRPC",
             "declAttributes": [
               "AccessControl",
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "init_kind": "Designated"
           },
@@ -1007,13 +1008,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12AppsFlyerRPC11AFRPCClientC7execute11jsonRequestS2S_tYaF",
+            "usr": "c:@M@AppsFlyerRPC@objc(cs)AFRPCClient(im)executeWithJsonRequest:completionHandler:",
             "mangledName": "$s12AppsFlyerRPC11AFRPCClientC7execute11jsonRequestS2S_tYaF",
             "moduleName": "AppsFlyerRPC",
             "declAttributes": [
               "Final",
               "AccessControl",
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1044,17 +1046,49 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AFRPCClient",
+                "printedName": "AppsFlyerRPC.AFRPCClient",
+                "usr": "c:@M@AppsFlyerRPC@objc(cs)AFRPCClient"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AppsFlyerRPC@objc(cs)AFRPCClient(im)init",
+            "mangledName": "$s12AppsFlyerRPC11AFRPCClientCACycfc",
+            "moduleName": "AppsFlyerRPC",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
-        "usr": "s:12AppsFlyerRPC11AFRPCClientC",
+        "usr": "c:@M@AppsFlyerRPC@objc(cs)AFRPCClient",
         "mangledName": "$s12AppsFlyerRPC11AFRPCClientC",
         "moduleName": "AppsFlyerRPC",
         "intro_iOS": "13.0",
         "declAttributes": [
           "Final",
           "AccessControl",
-          "Available"
+          "ObjCMembers",
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
         ],
         "conformances": [
           {
@@ -1070,6 +1104,55 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -1081,6 +1164,263 @@
         "moduleName": "AppsFlyerRPC",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppsFlyerRPCBridge",
+        "printedName": "AppsFlyerRPCBridge",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppsFlyerRPCBridge",
+                "printedName": "AppsFlyerRPC.AppsFlyerRPCBridge",
+                "usr": "c:@M@AppsFlyerRPC@objc(cs)AppsFlyerRPCBridge"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AppsFlyerRPC@objc(cs)AppsFlyerRPCBridge(cpy)shared",
+            "mangledName": "$s12AppsFlyerRPC0aB9RPCBridgeC6sharedACvpZ",
+            "moduleName": "AppsFlyerRPC",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AppsFlyerRPCBridge",
+                    "printedName": "AppsFlyerRPC.AppsFlyerRPCBridge",
+                    "usr": "c:@M@AppsFlyerRPC@objc(cs)AppsFlyerRPCBridge"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AppsFlyerRPC@objc(cs)AppsFlyerRPCBridge(cm)shared",
+                "mangledName": "$s12AppsFlyerRPC0aB9RPCBridgeC6sharedACvgZ",
+                "moduleName": "AppsFlyerRPC",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "executeJson",
+            "printedName": "executeJson(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AppsFlyerRPC@objc(cs)AppsFlyerRPCBridge(im)executeJson:completion:",
+            "mangledName": "$s12AppsFlyerRPC0aB9RPCBridgeC11executeJson_10completionySS_ySSctF",
+            "moduleName": "AppsFlyerRPC",
+            "intro_iOS": "13.0",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setEventHandler",
+            "printedName": "setEventHandler(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AppsFlyerRPC@objc(cs)AppsFlyerRPCBridge(im)setEventHandler:",
+            "mangledName": "$s12AppsFlyerRPC0aB9RPCBridgeC15setEventHandleryyySScF",
+            "moduleName": "AppsFlyerRPC",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeEventHandler",
+            "printedName": "removeEventHandler()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AppsFlyerRPC@objc(cs)AppsFlyerRPCBridge(im)removeEventHandler",
+            "mangledName": "$s12AppsFlyerRPC0aB9RPCBridgeC18removeEventHandleryyF",
+            "moduleName": "AppsFlyerRPC",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AppsFlyerRPC@objc(cs)AppsFlyerRPCBridge",
+        "mangledName": "$s12AppsFlyerRPC0aB9RPCBridgeC",
+        "moduleName": "AppsFlyerRPC",
+        "intro_iOS": "13.0",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
