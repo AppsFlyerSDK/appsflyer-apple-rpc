@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AppsFlyerRPC
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AppsFlyerRPC
 import AppsFlyerLib
 @_exported import AppsFlyerRPC
 import Foundation
@@ -9,46 +8,44 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct AnyCodable : Swift.Codable {
+public struct AnyCodable : Swift.Codable, @unchecked Swift.Sendable {
   public let value: Any
   public init(_ value: Any)
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public struct AFRPCRequest : Swift.Codable {
-  public let id: Swift.String?
+public struct AFRPCRequest : Swift.Codable, Swift.Sendable {
+  public let id: AppsFlyerRPC.AnyCodable?
   public let method: Swift.String
   public let params: [Swift.String : AppsFlyerRPC.AnyCodable]
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(id: Swift.String?, method: Swift.String, params: [Swift.String : AppsFlyerRPC.AnyCodable])
-  #endif
-  public func encode(to encoder: any Swift.Encoder) throws
+  public init(id: AppsFlyerRPC.AnyCodable?, method: Swift.String, params: [Swift.String : AppsFlyerRPC.AnyCodable])
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
-public struct AFRPCEvent : Swift.Codable {
+public struct AFRPCEvent : Swift.Codable, Swift.Sendable {
   public let event: Swift.String
   public let data: AppsFlyerRPC.AnyCodable?
   public let timestamp: Swift.Int64
   public let origin: Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(event: Swift.String, data: Any? = nil, timestamp: Swift.Int64? = nil, origin: Swift.String = "ios")
-  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc @available(iOS 13.0, *)
-@objcMembers final public class AFRPCClient : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+final public class AFRPCClient : ObjectiveC.NSObject, @unchecked Swift.Sendable {
   @objc public init(eventEmitter: @escaping (Swift.String) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
   @objc final public func execute(jsonRequest: Swift.String) async -> Swift.String
-  final public func emitEvent(_ event: AppsFlyerRPC.AFRPCEvent)
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
-@objcMembers final public class AppsFlyerRPCBridge : ObjectiveC.NSObject {
-  @objc public static let shared: AppsFlyerRPC.AppsFlyerRPCBridge
-  @objc @available(iOS 13.0, *)
-  final public func executeJson(_ jsonRequest: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
-  @objc final public func setEventHandler(_ handler: @escaping (Swift.String) -> Swift.Void)
-  @objc final public func removeEventHandler()
+@_Concurrency.MainActor @objcMembers final public class AppsFlyerRPCBridge : ObjectiveC.NSObject {
+  @objc @_Concurrency.MainActor public static let shared: AppsFlyerRPC.AppsFlyerRPCBridge
+  @objc @_Concurrency.MainActor final public func executeJson(_ jsonRequest: Swift.String, completion: @escaping (Swift.String) -> Swift.Void)
+  @objc @_Concurrency.MainActor final public func setEventHandler(_ handler: @escaping (Swift.String) -> Swift.Void)
+  @objc @_Concurrency.MainActor final public func removeEventHandler()
   @objc deinit
 }
+@available(iOS 13.0, *)
+extension AppsFlyerRPC.AppsFlyerRPCBridge : Swift.Sendable {}
