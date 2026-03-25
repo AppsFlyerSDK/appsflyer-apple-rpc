@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name             = 'AppsFlyerRPC'
-    s.version          = "1.0.3"
+    s.version          = "1.0.4"
     s.summary          = 'AppsFlyer iOS SDK RPC Interface'
 
     s.description      = <<-DESC
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
         ss.ios.preserve_paths = 'AppsFlyerRPC.xcframework', 'AppsFlyerRPC.modulemap'
         ss.ios.vendored_frameworks = 'AppsFlyerRPC.xcframework'
         ss.ios.resource_bundles = {'AppsFlyerRPC_Privacy' => ['Resources/PrivacyInfo.xcprivacy']}
-        ss.dependency 'AppsFlyerFramework', '6.17.8'
+        ss.dependency 'AppsFlyerFramework', '6.17.9'
     end
 
 end

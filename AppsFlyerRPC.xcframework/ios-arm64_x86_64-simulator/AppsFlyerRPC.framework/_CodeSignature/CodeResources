@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AppsFlyerRPC-Swift.h</key>
 		<data>
-		K3gXmYiAD6JDVWccSACPbkHOULY=
+		1EjNdzIybWJr8dAZWTg+Hcy+gHg=
 		</data>
 		<key>Headers/AppsFlyerRPC.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CDG17XWVeWuQus0z0fx4fyjQ0lA=
+		3nKKz0Jgp9x7synObZPUaXikhLQ=
 		</data>
 		<key>Modules/AppsFlyerRPC.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		wdZ5B0JU5U9X2gLmV+f4+z5+lEs=
+		Uyo/EaNy+vxvGJA6bxtBvtsZkz8=
 		</data>
 		<key>Modules/AppsFlyerRPC.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ViKf2EHFXctHpYQ0JAsYBNXetUY=
+		LZofpbfjnPuyyzPNHTfrHato5Ow=
 		</data>
 		<key>Modules/AppsFlyerRPC.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		6mlmhn01FItLZ8KaqUPYdPgWLPw=
+		ZKFGEa15CmU4MCl3u/oqCnZwcjw=
 		</data>
 		<key>Modules/AppsFlyerRPC.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ViKf2EHFXctHpYQ0JAsYBNXetUY=
+		LZofpbfjnPuyyzPNHTfrHato5Ow=
 		</data>
 		<key>Modules/AppsFlyerRPC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qKl150raWc2lxppzWvxN/Lk1ITY=
+		c3ofW9ulv3JML1Kl2jRtU+lIbJk=
 		</data>
 		<key>Modules/AppsFlyerRPC.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		wdZ5B0JU5U9X2gLmV+f4+z5+lEs=
+		Uyo/EaNy+vxvGJA6bxtBvtsZkz8=
 		</data>
 		<key>Modules/AppsFlyerRPC.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		cP8gCbp/swSUCI69GP+two69Nnw=
+		flOaR4Zd6/WklkHw8/9qaR1hYco=
 		</data>
 		<key>Modules/AppsFlyerRPC.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		I83tLWumwWn0cxHyMhwYmReDm9M=
+		fQsZXWN6ja2+e9ol2FBFIS3ZsFM=
 		</data>
 		<key>Modules/AppsFlyerRPC.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		cP8gCbp/swSUCI69GP+two69Nnw=
+		flOaR4Zd6/WklkHw8/9qaR1hYco=
 		</data>
 		<key>Modules/AppsFlyerRPC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9GuhyB+n6uMdWrbh2xFs0nLCDQM=
+		JcmSXKAVURYsMJDx62kklmsNTnk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,21 +69,13 @@
 	<dict>
 		<key>Headers/AppsFlyerRPC-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			K3gXmYiAD6JDVWccSACPbkHOULY=
-			</data>
 			<key>hash2</key>
 			<data>
-			cPaZLGQTLm7KwT4IeN4ANkga93Cm4MfIHhpqRCDr+O0=
+			ysGwZs11cJNRqtjwJ8CYFMDdQ+PEoseArwgJ44nss4Y=
 			</data>
 		</dict>
 		<key>Headers/AppsFlyerRPC.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lP1PQby//kCz9LS8FPaGpCg50wQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			erD6Gc8n372hbLmIvm9x/wDbWaHwnIgiPG7GxwcC7tk=
@@ -91,120 +83,76 @@
 		</dict>
 		<key>Modules/AppsFlyerRPC.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wdZ5B0JU5U9X2gLmV+f4+z5+lEs=
-			</data>
 			<key>hash2</key>
 			<data>
-			S+4QWcSPyzDTT0Temx2Qy5iBuyGjyKkcorPiLm0Jzt4=
+			NTYuy2rnYqyOk+CNe6fSDTzQODJu6Alk2JK2Z1AqhXA=
 			</data>
 		</dict>
 		<key>Modules/AppsFlyerRPC.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ViKf2EHFXctHpYQ0JAsYBNXetUY=
-			</data>
 			<key>hash2</key>
 			<data>
-			yHhaQh6RQxlJpkWWdCo7xu+DprEDYe884HHGEWLFs7c=
+			PJBYHJ9Tn78RusO7/if/OeQ/BIGjbKtpeBMB/+Gyk9s=
 			</data>
 		</dict>
 		<key>Modules/AppsFlyerRPC.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6mlmhn01FItLZ8KaqUPYdPgWLPw=
-			</data>
 			<key>hash2</key>
 			<data>
-			mIoDxrqx9DAx6iwtnHoSDIa3QWgL+IwxO9RnmXJ4jY4=
+			l5oaiSry+ICsF8sRgmjXUyMgbOYciHWgkl+BmRB5Mww=
 			</data>
 		</dict>
 		<key>Modules/AppsFlyerRPC.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ViKf2EHFXctHpYQ0JAsYBNXetUY=
-			</data>
 			<key>hash2</key>
 			<data>
-			yHhaQh6RQxlJpkWWdCo7xu+DprEDYe884HHGEWLFs7c=
+			PJBYHJ9Tn78RusO7/if/OeQ/BIGjbKtpeBMB/+Gyk9s=
 			</data>
 		</dict>
 		<key>Modules/AppsFlyerRPC.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qKl150raWc2lxppzWvxN/Lk1ITY=
-			</data>
 			<key>hash2</key>
 			<data>
-			jaEq/IpgjjV6BsdBx9sXEYZ7eOGP+JWrRO2pPSOwSGU=
+			1Lpz4cDdWmU2ATtWJqEaFKKYlAwaLPXoWHpvV4i8FhQ=
 			</data>
 		</dict>
 		<key>Modules/AppsFlyerRPC.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wdZ5B0JU5U9X2gLmV+f4+z5+lEs=
-			</data>
 			<key>hash2</key>
 			<data>
-			S+4QWcSPyzDTT0Temx2Qy5iBuyGjyKkcorPiLm0Jzt4=
+			NTYuy2rnYqyOk+CNe6fSDTzQODJu6Alk2JK2Z1AqhXA=
 			</data>
 		</dict>
 		<key>Modules/AppsFlyerRPC.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cP8gCbp/swSUCI69GP+two69Nnw=
-			</data>
 			<key>hash2</key>
 			<data>
-			YFRV7A0moHZpjNBhm5Bj11vT5MT7SYSSzIlhfdslNyA=
+			aBjmG508AUp/NDFZLUmisShLnEdyiNdmDF+kQmROj9s=
 			</data>
 		</dict>
 		<key>Modules/AppsFlyerRPC.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			I83tLWumwWn0cxHyMhwYmReDm9M=
-			</data>
 			<key>hash2</key>
 			<data>
-			J1ZPXnZfRCQhgr3pSA3lHDfLda6UiKabcJbNGfBYToI=
+			ZZRLtOG0BB1lLdKcnySRWYVYvXj6te0GHrgSIAOE9kU=
 			</data>
 		</dict>
 		<key>Modules/AppsFlyerRPC.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cP8gCbp/swSUCI69GP+two69Nnw=
-			</data>
 			<key>hash2</key>
 			<data>
-			YFRV7A0moHZpjNBhm5Bj11vT5MT7SYSSzIlhfdslNyA=
+			aBjmG508AUp/NDFZLUmisShLnEdyiNdmDF+kQmROj9s=
 			</data>
 		</dict>
 		<key>Modules/AppsFlyerRPC.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9GuhyB+n6uMdWrbh2xFs0nLCDQM=
-			</data>
 			<key>hash2</key>
 			<data>
-			6E9OgjwcsRaCAtJQpOmQEMqbonF54HgiuPdwJTXx8xw=
+			qqvj6eY1VGEsp3fZ283ZtCVAR11iUFKX1Ab9uxEX8Nw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			v/G0j5NP7R/Z1gG2jM1fAgP8av0=
-			</data>
 			<key>hash2</key>
 			<data>
 			0K7Cqza9DvacdcKZiBURNcF9a/ifLuWTMU6+HAUbmOE=
@@ -212,10 +160,6 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			U+4O0RFvfU2ofDi73UIj1sQ7Ss0=
-			</data>
 			<key>hash2</key>
 			<data>
 			r0jXiqLe8kfI+MC0owSRvAHyD7WDcU/A5K42tXihkmc=
