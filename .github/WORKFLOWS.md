@@ -61,8 +61,9 @@ AppsFlyerRPC uses **two automated workflows** to streamline the release process:
 - ✅ Updates all version files:
   - `Carthage/AppsFlyerRPC-static.json`
   - `Carthage/AppsFlyerRPC-dynamic.json`
+  - `Carthage/AppsFlyerRPC-strict.json`
   - `AppsFlyerRPC.podspec`
-  - `Package.swift` (with new checksum)
+  - `Package.swift` (with new checksums for both the `AppsFlyerRPC` and `AppsFlyerRPCStrict` binary targets)
   - `README.md`
 - ✅ Creates git tag
 - ✅ Commits changes
@@ -87,8 +88,9 @@ releases/[major].x.x/[major].[minor].x/[major].[minor].[patch][_suffix]
 - ✅ Creates ZIP artifacts:
   - `AppsFlyerRPC-static.xcframework.zip`
   - `AppsFlyerRPC-dynamic.xcframework.zip`
+  - `AppsFlyerRPC-strict.xcframework.zip`
 - ✅ Creates GitHub Release with installation instructions
-- ✅ Uploads both XCFramework ZIPs
+- ✅ Uploads all three XCFramework ZIPs
 - ✅ Publishes to CocoaPods (if `COCOAPODS_TRUNK_TOKEN` is set)
 
 ---
@@ -99,11 +101,7 @@ releases/[major].x.x/[major].[minor].x/[major].[minor].[patch][_suffix]
 
 Before starting a release, ensure:
 
-1. **XCFrameworks are built**:
-   ```bash
-   cd /path/to/appsflyer.sdk.ios/AppsFlyerRPC
-   make build_for_release
-   ```
+1. **XCFrameworks are built** (see the appsflyer.sdk.ios repo for build instructions)
 
 2. **XCFrameworks are copied** to the repository:
    ```bash
@@ -112,6 +110,9 @@ Before starting a release, ensure:
    
    # Dynamic (Dynamic folder)
    cp -R /path/to/built/Dynamic/AppsFlyerRPC.xcframework ./Dynamic/
+   
+   # Strict, no IDFA/AdSupport (Strict folder)
+   cp -R /path/to/built/Strict/AppsFlyerRPC.xcframework ./Strict/
    ```
 
 3. **Both branches exist**: `main` and `development`
@@ -138,12 +139,13 @@ git checkout -b releases/1.x.x/1.0.x/1.0.0
 #### Step 2: Ensure XCFrameworks are Present
 
 ```bash
-# Verify both XCFrameworks exist
+# Verify all three XCFrameworks exist
 ls -la AppsFlyerRPC.xcframework/
 ls -la Dynamic/AppsFlyerRPC.xcframework/
+ls -la Strict/AppsFlyerRPC.xcframework/
 ```
 
-Both should show complete framework structures with:
+All three should show complete framework structures with:
 - `Info.plist`
 - `ios-arm64/` (device)
 - `ios-arm64_x86_64-simulator/` (simulator)

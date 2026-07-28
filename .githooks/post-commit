@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+# Lints tracked files for syntax errors after each commit.
+# Enable once per clone: git config core.hooksPath .githooks
+set -uo pipefail
+
+status=0
+fail() { echo "❌ $1" >&2; status=1; }
+
+# GitHub workflow YAML
+while IFS= read -r -d '' f; do
+  ruby -ryaml -e "YAML.load_file('$f')" >/dev/null 2>&1 || fail "YAML syntax error: $f"
+done < <(find .github/workflows \( -name '*.yml' -o -name '*.yaml' \) -print0 2>/dev/null)
+
+# Shell scripts
+while IFS= read -r -d '' f; do
+  if command -v shellcheck >/dev/null; then
+    shellcheck -S error "$f" >/dev/null 2>&1 || fail "shellcheck error: $f"
+  else
+    bash -n "$f" 2>/dev/null || fail "bash syntax error: $f"
+  fi
+done < <(find scripts -name '*.sh' -print0 2>/dev/null)
+
+# CocoaPods podspec
+while IFS= read -r -d '' f; do
+  ruby -c "$f" >/dev/null 2>&1 || fail "Ruby syntax error: $f"
+done < <(find . -maxdepth 1 -name '*.podspec' -print0 2>/dev/null)
+
+# Swift Package Manager manifest
+if [ -f Package.swift ]; then
+  swift package dump-package >/dev/null 2>&1 || fail "Package.swift syntax error"
+fi
+
+# Carthage JSON manifests
+while IFS= read -r -d '' f; do
+  jq empty "$f" >/dev/null 2>&1 || fail "JSON syntax error: $f"
+done < <(find Carthage -name '*.json' -print0 2>/dev/null)
+
+if [ "$status" -ne 0 ]; then
+  echo "" >&2
+  echo "⚠️  post-commit lint found syntax errors above. The commit already happened — fix and commit again." >&2
+fi
+
+exit 0
