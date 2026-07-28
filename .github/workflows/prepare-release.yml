@@ -90,19 +90,7 @@ jobs:
           echo "Native SDK pin (Main): $MAIN_PIN"
           echo "Native SDK pin (Strict): $STRICT_PIN"
 
-      - name: Create tag
-        env:
-          VERSION: ${{ steps.extract_version.outputs.version }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          set -e
-
-          # Create tag with clean version number only
-          git tag "$VERSION" -m "Release $VERSION"
-
-          echo "✅ Tag $VERSION created"
-
-      - name: Commit changes to releases branch
+      - name: Commit changes and create tag
         env:
           VERSION: ${{ steps.extract_version.outputs.version }}
           BRANCH_NAME: ${{ github.ref_name }}
@@ -120,10 +108,15 @@ jobs:
           # Commit changes
           git commit -m "chore: bump version to $VERSION"
 
+          # Tag must be created after the commit above, so it points at the
+          # commit whose podspec/Package.swift actually match $VERSION —
+          # tagging first pointed the tag at the pre-bump commit instead.
+          git tag "$VERSION" -m "Release $VERSION"
+
           # Push changes and tag back to the releases branch
           git push origin "$BRANCH_NAME" --tags
 
-          echo "✅ Changes committed to $BRANCH_NAME with tag"
+          echo "✅ Changes committed and tagged $VERSION on $BRANCH_NAME"
 
       - name: Create PR to main
         env:
