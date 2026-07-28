@@ -15,6 +15,13 @@ sed -i.bak -E \
   "s|AppsFlyerRPC-dynamic\.json\" == [0-9]+\.[0-9]+\.[0-9]+|AppsFlyerRPC-dynamic.json\" == ${VERSION}|g" \
   "$README"
 
+# Matches either a real version or the pre-release "<version>" placeholder,
+# so the first release replaces the placeholder and later releases keep updating it.
+# Uses % as the sed delimiter since the pattern needs a literal | for alternation.
+sed -i.bak -E \
+  "s%AppsFlyerRPC-strict\.json\" == ([0-9]+\.[0-9]+\.[0-9]+|<version>)%AppsFlyerRPC-strict.json\" == ${VERSION}%g" \
+  "$README"
+
 # Cleanup backup file
 rm "${README}.bak"
 

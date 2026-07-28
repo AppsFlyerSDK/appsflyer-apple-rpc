@@ -61,6 +61,12 @@ Add to your `Podfile`:
 pod 'AppsFlyerRPC'
 ```
 
+For a build with no IDFA/AdSupport collection (no ATT prompt), depend on the `Strict` subspec instead — this also requires the native SDK's own `AppsFlyerFramework/Strict` subspec:
+
+```ruby
+pod 'AppsFlyerRPC/Strict'
+```
+
 Then run:
 
 ```bash
@@ -80,10 +86,11 @@ https://github.com/AppsFlyerSDK/appsflyer-apple-rpc
 
 3. Choose the desired version or branch
 4. Select your project's target and click **Finish**
+5. Pick the `AppsFlyerRPC` product for the standard build, or `AppsFlyerRPCStrict` for the no-IDFA/AdSupport variant — the Strict product also requires the native SDK's own `AppsFlyerFramework/Strict` counterpart
 
 ### <a id="carthage">Carthage</a>
 
-AppsFlyerRPC supports both **static** and **dynamic** linking via Carthage.
+AppsFlyerRPC supports **static**, **dynamic**, and **strict** (no IDFA/AdSupport) linking via Carthage.
 
 #### Static Linking (Recommended)
 
@@ -99,6 +106,14 @@ For dynamic linking, use `AppsFlyerRPC-dynamic.json`:
 
 ```
 binary "https://raw.githubusercontent.com/AppsFlyerSDK/appsflyer-apple-rpc/main/Carthage/AppsFlyerRPC-dynamic.json" == 7.0.1
+```
+
+#### Strict Linking (No IDFA/AdSupport)
+
+For a build that never links `AdSupport`/`AppTrackingTransparency`, use `AppsFlyerRPC-strict.json`. This variant has no released version yet — pin to the first version listed in that file once it's published:
+
+```
+binary "https://raw.githubusercontent.com/AppsFlyerSDK/appsflyer-apple-rpc/main/Carthage/AppsFlyerRPC-strict.json" == <version>
 ```
 
 #### Installation

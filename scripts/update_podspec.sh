@@ -9,4 +9,3 @@ PODSPEC="AppsFlyerRPC.podspec"
 sed -i.bak -E 's|^([[:space:]]*s\.version[[:space:]]*=[[:space:]]*")[0-9]+\.[0-9]+\.[0-9]+(")|\1'"${VERSION}"'\2|' "$PODSPEC"
 
 rm "${PODSPEC}.bak"
-

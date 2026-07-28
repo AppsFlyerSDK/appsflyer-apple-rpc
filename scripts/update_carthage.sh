@@ -5,7 +5,7 @@ set -euo pipefail
 VERSION="$1"
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-for VARIANT in dynamic static; do
+for VARIANT in dynamic static strict; do
   JSON_FILE="${REPO_ROOT}/Carthage/AppsFlyerRPC-${VARIANT}.json"
   NEW_URL="https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/releases/download/${VERSION}/AppsFlyerRPC-${VARIANT}.xcframework.zip"
   # Append new version entry
