@@ -142,11 +142,11 @@ jobs:
           PR_TITLE="chore: release $VERSION"
           PR_BODY="Release version $VERSION
 
-⚠️ **Check native SDK version before merging** — RPC's version is independent of the native SDK's. This release currently depends on:
-- \`AppsFlyerFramework\` @ ${MAIN_PIN} (Main)
-- \`AppsFlyerFramework/Strict\` @ ${STRICT_PIN} (Strict)
+          ⚠️ **Check native SDK version before merging** — RPC's version is independent of the native SDK's. This release currently depends on:
+          - \`AppsFlyerFramework\` @ ${MAIN_PIN} (Main)
+          - \`AppsFlyerFramework/Strict\` @ ${STRICT_PIN} (Strict)
 
-Confirm this is the native SDK version you intend to ship against."
+          Confirm this is the native SDK version you intend to ship against."
 
           # Create PR
           gh pr create \
