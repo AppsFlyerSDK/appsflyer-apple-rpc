@@ -24,14 +24,14 @@ Pod::Spec.new do |s|
         ss.ios.preserve_paths = 'AppsFlyerRPC.xcframework', 'AppsFlyerRPC.modulemap'
         ss.ios.vendored_frameworks = 'AppsFlyerRPC.xcframework'
         ss.ios.resource_bundles = {'AppsFlyerRPC_Privacy' => ['Resources/PrivacyInfo.xcprivacy']}
-        ss.dependency 'AppsFlyerFramework', '7.0.1'
+        ss.dependency 'AppsFlyerFramework', '7.0.2'
     end
 
     s.subspec 'Strict' do |ss|
         ss.ios.preserve_paths = 'Strict/AppsFlyerRPC.xcframework', 'AppsFlyerRPC.modulemap'
         ss.ios.vendored_frameworks = 'Strict/AppsFlyerRPC.xcframework'
         ss.ios.resource_bundles = {'AppsFlyerRPC_Privacy_Strict' => ['Resources/PrivacyInfo.xcprivacy']}
-        ss.dependency 'AppsFlyerFramework/Strict', '7.0.1'
+        ss.dependency 'AppsFlyerFramework/Strict', '7.0.2'
     end
 
 end
