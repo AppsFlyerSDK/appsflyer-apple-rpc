@@ -597,16 +597,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AppsFlyerRPC",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "AFRPCEvent",
         "printedName": "AFRPCEvent",
@@ -1041,6 +1031,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AppsFlyerRPC",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "AppsFlyerLib",
         "printedName": "AppsFlyerLib",
         "declKind": "Import",
@@ -1303,7 +1303,6 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -1373,11 +1372,10 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@AppsFlyerRPC@objc(cs)AppsFlyerRPCBridge(im)executeJson:completion:",
-            "mangledName": "$s12AppsFlyerRPC0aB9RPCBridgeC11executeJson_10completionySS_ySSctF",
+            "mangledName": "$s12AppsFlyerRPC0aB9RPCBridgeC11executeJson_10completionySS_ySSYbctF",
             "moduleName": "AppsFlyerRPC",
             "declAttributes": [
               "Final",
-              "Custom",
               "AccessControl",
               "RawDocComment",
               "ObjC"
@@ -1419,7 +1417,6 @@
             "moduleName": "AppsFlyerRPC",
             "declAttributes": [
               "Final",
-              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -1442,7 +1439,6 @@
             "moduleName": "AppsFlyerRPC",
             "declAttributes": [
               "Final",
-              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -1459,7 +1455,7 @@
           "AccessControl",
           "ObjCMembers",
           "Available",
-          "Custom",
+          "RawDocComment",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -1531,13 +1527,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -1832,18 +1821,18 @@
       "value": "503"
     },
     {
-      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCErrorFactory.swift",
+      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCError.swift",
       "kind": "StringLiteral",
-      "offset": 640,
-      "length": 14,
-      "value": "\"Invalid JSON\""
+      "offset": 1063,
+      "length": 17,
+      "value": "\"Request timeout\""
     },
     {
-      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCErrorFactory.swift",
+      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCError.swift",
       "kind": "StringLiteral",
-      "offset": 1241,
-      "length": 16,
-      "value": "\"Internal error\""
+      "offset": 1168,
+      "length": 21,
+      "value": "\"SDK not initialized\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCEvent.swift",
@@ -1918,483 +1907,504 @@
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 4168,
+      "offset": 4177,
       "length": 10,
       "value": "\"logEvent\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 4794,
+      "offset": 4812,
       "length": 19,
       "value": "\"setCustomerUserId\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 5087,
+      "offset": 5105,
       "length": 19,
       "value": "\"setAdditionalData\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 5371,
+      "offset": 5389,
       "length": 17,
       "value": "\"setCurrencyCode\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 5689,
+      "offset": 5707,
       "length": 34,
       "value": "\"setDisableAdvertisingIdentifiers\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 5953,
+      "offset": 5971,
       "length": 23,
       "value": "\"setDisableSKAdNetwork\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 6211,
+      "offset": 6229,
       "length": 28,
       "value": "\"setShouldCollectDeviceName\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 6469,
+      "offset": 6487,
       "length": 21,
       "value": "\"setAppInviteOneLink\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 6731,
+      "offset": 6749,
       "length": 15,
       "value": "\"anonymizeUser\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 6987,
+      "offset": 7005,
       "length": 22,
       "value": "\"setDisableCollectASA\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 7283,
+      "offset": 7301,
       "length": 31,
       "value": "\"setDisableAppleAdsAttribution\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 7589,
+      "offset": 7607,
       "length": 32,
       "value": "\"setUseReceiptValidationSandbox\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 7852,
+      "offset": 7870,
       "length": 24,
       "value": "\"setUseUninstallSandbox\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 8109,
+      "offset": 8127,
       "length": 26,
       "value": "\"setDisableIDFVCollection\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 8368,
+      "offset": 8386,
       "length": 26,
       "value": "\"setCurrentDeviceLanguage\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 8665,
+      "offset": 8683,
       "length": 17,
       "value": "\"getAppsFlyerUID\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 8792,
+      "offset": 8810,
       "length": 15,
       "value": "\"getSdkVersion\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 9003,
+      "offset": 8933,
+      "length": 13,
+      "value": "\"getHostName\""
+    },
+    {
+      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 9056,
+      "length": 15,
+      "value": "\"getHostPrefix\""
+    },
+    {
+      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 9177,
+      "length": 11,
+      "value": "\"isStopped\""
+    },
+    {
+      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 9384,
       "length": 34,
       "value": "\"appendParametersToDeepLinkingURL\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 9907,
+      "offset": 10288,
       "length": 33,
       "value": "\"addPushNotificationDeepLinkPath\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 10323,
+      "offset": 10704,
       "length": 32,
       "value": "\"enableFacebookDeferredApplinks\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 10591,
+      "offset": 10972,
       "length": 28,
       "value": "\"setFacebookDeferredAppLink\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 11096,
+      "offset": 11477,
       "length": 15,
       "value": "\"handleOpenURL\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 11412,
+      "offset": 11793,
       "length": 15,
       "value": "\"handleOpenUrl\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 11714,
+      "offset": 12095,
       "length": 22,
       "value": "\"continueUserActivity\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 12108,
+      "offset": 12489,
       "length": 24,
       "value": "\"handlePushNotification\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 12492,
+      "offset": 12873,
       "length": 19,
       "value": "\"registerUninstall\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 13642,
-      "length": 32,
-      "value": "\"performOnAppAttributionWithURL\""
+      "offset": 14186,
+      "length": 20,
+      "value": "\"performDeepLinking\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 13890,
+      "offset": 14422,
       "length": 13,
       "value": "\"logLocation\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 15089,
+      "offset": 15621,
       "length": 24,
       "value": "\"setResolveDeepLinkURLs\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 15576,
+      "offset": 16108,
       "length": 24,
       "value": "\"setOneLinkCustomDomain\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 16071,
+      "offset": 16603,
       "length": 9,
       "value": "\"setHost\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 16816,
+      "offset": 17348,
       "length": 27,
       "value": "\"setMinTimeBetweenSessions\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 17079,
+      "offset": 17611,
       "length": 20,
       "value": "\"setDeepLinkTimeout\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 17329,
+      "offset": 17861,
       "length": 14,
       "value": "\"setInstallId\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 17701,
+      "offset": 18233,
       "length": 29,
       "value": "\"setSharingFilterForPartners\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 18354,
+      "offset": 18886,
       "length": 16,
       "value": "\"setPartnerData\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 18949,
+      "offset": 19481,
       "length": 6,
       "value": "\"stop\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 19201,
+      "offset": 19733,
       "length": 16,
       "value": "\"setConsentData\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 20713,
+      "offset": 20660,
       "length": 25,
       "value": "\"enableTCFDataCollection\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 21315,
+      "offset": 21262,
       "length": 29,
       "value": "\"validateAndLogInAppPurchase\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 21553,
+      "offset": 21500,
       "length": 14,
       "value": "\"subscription\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 21592,
+      "offset": 21539,
       "length": 17,
       "value": "\"oneTimePurchase\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 23618,
+      "offset": 23565,
       "length": 14,
       "value": "\"logAdRevenue\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 23911,
+      "offset": 23858,
       "length": 13,
       "value": "\"googleadmob\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 23948,
+      "offset": 23895,
       "length": 12,
       "value": "\"ironsource\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 23983,
+      "offset": 23930,
       "length": 13,
       "value": "\"applovinmax\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 24020,
+      "offset": 23967,
       "length": 7,
       "value": "\"fyber\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 24045,
+      "offset": 23992,
       "length": 10,
       "value": "\"appodeal\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 24076,
+      "offset": 24023,
       "length": 8,
       "value": "\"admost\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 24103,
+      "offset": 24050,
       "length": 7,
       "value": "\"topon\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 24128,
+      "offset": 24075,
       "length": 10,
       "value": "\"tradplus\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 24159,
+      "offset": 24106,
       "length": 8,
       "value": "\"yandex\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 24186,
+      "offset": 24133,
       "length": 12,
       "value": "\"chartboost\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 24221,
+      "offset": 24168,
       "length": 7,
       "value": "\"unity\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 24246,
+      "offset": 24193,
       "length": 10,
       "value": "\"toponpte\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 24277,
+      "offset": 24224,
       "length": 8,
       "value": "\"custom\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 24304,
+      "offset": 24251,
       "length": 20,
       "value": "\"directmonetization\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 25869,
+      "offset": 25816,
       "length": 15,
       "value": "\"setPluginInfo\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "Dictionary",
-      "offset": 26027,
+      "offset": 25974,
       "length": 392,
       "value": "[(\"ios_native\", 0), (\"unity\", 1), (\"flutter\", 2), (\"react_native\", 3), (\"adobe_air\", 4), (\"adobe_mobile\", 5), (\"cocos2dx\", 6), (\"cordova\", 7), (\"mparticle\", 8), (\"native_script\", 9), (\"expo\", 10), (\"unreal\", 11), (\"xamarin\", 12), (\"capacitor\", 13), (\"segment\", 14), (\"adobe_swift_aep\", 15)]"
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 28079,
+      "offset": 28026,
       "length": 27,
       "value": "\"logCrossPromoteImpression\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 28512,
+      "offset": 28459,
       "length": 17,
       "value": "\"logAndOpenStore\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 28971,
+      "offset": 28918,
       "length": 20,
       "value": "\"generateInviteLink\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 30123,
+      "offset": 30070,
       "length": 11,
       "value": "\"logInvite\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 30449,
+      "offset": 30396,
       "length": 14,
       "value": "\"setUserEmail\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 30687,
+      "offset": 30634,
       "length": 14,
       "value": "\"setUserPhone\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 31071,
+      "offset": 31018,
       "length": 18,
       "value": "\"setUserFirstName\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 31328,
+      "offset": 31275,
       "length": 17,
       "value": "\"setUserLastName\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 31582,
+      "offset": 31529,
       "length": 18,
       "value": "\"setUserFbLoginId\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 31828,
+      "offset": 31801,
       "length": 14,
       "value": "\"clearUserPii\""
     },
@@ -2408,30 +2418,44 @@
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/RPCParamHelpers.swift",
       "kind": "StringLiteral",
-      "offset": 2050,
+      "offset": 1738,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 382,
+      "offset": 406,
       "length": 9,
       "value": "1048576"
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCResponseEncoder.swift",
       "kind": "StringLiteral",
-      "offset": 368,
+      "offset": 599,
       "length": 96,
       "value": "\"{\"id\":null,\"error\":{\"code\":500,\"message\":\"Internal encoding error\"},\"result\":null}\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCResponseEncoder.swift",
       "kind": "StringLiteral",
-      "offset": 512,
+      "offset": 743,
       "length": 92,
       "value": "\"{\"event\":\"error\",\"data\":{\"message\":\"Failed to encode event\"},\"origin\":\"ios\"}\""
+    },
+    {
+      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/RPCQueue.swift",
+      "kind": "IntegerLiteral",
+      "offset": 519,
+      "length": 3,
+      "value": "256"
+    },
+    {
+      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/RPCQueue.swift",
+      "kind": "StringLiteral",
+      "offset": 778,
+      "length": 36,
+      "value": "\"com.appsflyer.rpc.queue.completion\""
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/State\/AFRPCHandlerStateActor.swift",
@@ -2450,84 +2474,63 @@
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1888,
+      "offset": 1181,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "FloatLiteral",
-      "offset": 2833,
+      "offset": 2045,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "FloatLiteral",
-      "offset": 6077,
+      "offset": 5370,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "FloatLiteral",
-      "offset": 6252,
+      "offset": 5545,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "FloatLiteral",
-      "offset": 6275,
+      "offset": 5568,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "FloatLiteral",
-      "offset": 6298,
+      "offset": 5591,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "FloatLiteral",
-      "offset": 6327,
+      "offset": 5620,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "FloatLiteral",
-      "offset": 6353,
+      "offset": 5646,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Delegates\/AFRPCRequestHandlerDelegates.swift",
       "kind": "StringLiteral",
-      "offset": 4381,
-      "length": 8,
-      "value": "\"status\""
-    },
-    {
-      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Delegates\/AFRPCRequestHandlerDelegates.swift",
-      "kind": "StringLiteral",
-      "offset": 4498,
-      "length": 10,
-      "value": "\"deepLink\""
-    },
-    {
-      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Delegates\/AFRPCRequestHandlerDelegates.swift",
-      "kind": "StringLiteral",
-      "offset": 4620,
-      "length": 7,
-      "value": "\"error\""
-    },
-    {
-      "filePath": "\/Users\/Amit.Levy\/XCodeProjects\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Delegates\/AFRPCRequestHandlerDelegates.swift",
-      "kind": "StringLiteral",
-      "offset": 4854,
+      "offset": 6350,
       "length": 20,
       "value": "\"onDeepLinkReceived\""
     },

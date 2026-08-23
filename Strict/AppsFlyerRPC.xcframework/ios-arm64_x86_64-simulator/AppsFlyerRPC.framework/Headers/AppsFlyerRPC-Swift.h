@@ -340,8 +340,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AppsFlyerRPC
 + (AppsFlyerRPCBridge * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// Executes an RPC request and returns the JSON response string via the completion handler.
-/// The completion is invoked on the main thread (the bridge is <code>@MainActor</code>-isolated).
+/// Executes an RPC request off the main thread — see <code>RPCQueue</code> for the FIFO ordering guarantee.
 - (void)executeJson:(NSString * _Nonnull)jsonRequest completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
 - (void)setEventHandler:(void (^ _Nonnull)(NSString * _Nonnull))handler;
 - (void)removeEventHandler;
@@ -697,8 +696,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AppsFlyerRPC
 + (AppsFlyerRPCBridge * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// Executes an RPC request and returns the JSON response string via the completion handler.
-/// The completion is invoked on the main thread (the bridge is <code>@MainActor</code>-isolated).
+/// Executes an RPC request off the main thread — see <code>RPCQueue</code> for the FIFO ordering guarantee.
 - (void)executeJson:(NSString * _Nonnull)jsonRequest completion:(void (^ _Nonnull)(NSString * _Nonnull))completion;
 - (void)setEventHandler:(void (^ _Nonnull)(NSString * _Nonnull))handler;
 - (void)removeEventHandler;
