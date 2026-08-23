@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name             = 'AppsFlyerRPC'
-    s.version          = "7.0.12"
+    s.version          = "7.0.13"
     s.summary          = 'AppsFlyer iOS SDK RPC Interface'
 
     s.description      = <<-DESC
