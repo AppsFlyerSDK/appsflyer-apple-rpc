@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AppsFlyerRPC
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AppsFlyerRPC
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AppsFlyerLib
 @_exported import AppsFlyerRPC
 import Foundation
@@ -20,9 +20,7 @@ public struct AFRPCRequest : Swift.Codable, Swift.Sendable {
   public let id: AppsFlyerRPC.AnyCodable?
   public let method: Swift.String
   public let params: [Swift.String : AppsFlyerRPC.AnyCodable]
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(id: AppsFlyerRPC.AnyCodable?, method: Swift.String, params: [Swift.String : AppsFlyerRPC.AnyCodable])
-  #endif
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -31,9 +29,7 @@ public struct AFRPCEvent : Swift.Codable, Swift.Sendable {
   public let data: AppsFlyerRPC.AnyCodable?
   public let timestamp: Swift.Int64
   public let origin: Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(event: Swift.String, data: Any? = nil, timestamp: Swift.Int64? = nil, origin: Swift.String = "ios")
-  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -44,7 +40,7 @@ final public class AFRPCClient : ObjectiveC.NSObject, @unchecked Swift.Sendable 
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
-@objcMembers final public class AppsFlyerRPCBridge : ObjectiveC.NSObject {
+@objcMembers final public class AppsFlyerRPCBridge : ObjectiveC.NSObject, @unchecked Swift.Sendable {
   @objc public static let shared: AppsFlyerRPC.AppsFlyerRPCBridge
   @objc final public func executeJson(_ jsonRequest: Swift.String, completion: @escaping @Sendable (Swift.String) -> Swift.Void)
   @objc final public func setEventHandler(_ handler: @escaping (Swift.String) -> Swift.Void)
