@@ -1,5 +1,6 @@
 {
   "7.0.12": "https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/releases/download/7.0.12/AppsFlyerRPC-strict.xcframework.zip",
   "7.0.13": "https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/releases/download/7.0.13/AppsFlyerRPC-strict.xcframework.zip",
-  "7.0.4": "https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/releases/download/7.0.4/AppsFlyerRPC-strict.xcframework.zip"
+  "7.0.4": "https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/releases/download/7.0.4/AppsFlyerRPC-strict.xcframework.zip",
+  "7.0.41": "https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/releases/download/7.0.41/AppsFlyerRPC-strict.xcframework.zip"
 }

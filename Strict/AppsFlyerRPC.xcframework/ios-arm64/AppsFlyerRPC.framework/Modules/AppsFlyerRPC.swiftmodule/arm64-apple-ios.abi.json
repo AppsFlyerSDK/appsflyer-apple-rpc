@@ -186,6 +186,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -539,6 +546,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -941,6 +955,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -1236,6 +1257,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -1506,6 +1534,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -1765,756 +1800,770 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCError.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCError.swift",
       "kind": "IntegerLiteral",
       "offset": 643,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCError.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCError.swift",
       "kind": "IntegerLiteral",
       "offset": 708,
       "length": 3,
       "value": "404"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCError.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCError.swift",
       "kind": "IntegerLiteral",
       "offset": 822,
       "length": 3,
       "value": "422"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCError.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCError.swift",
       "kind": "IntegerLiteral",
       "offset": 893,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCError.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCError.swift",
       "kind": "IntegerLiteral",
       "offset": 982,
       "length": 3,
       "value": "503"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCError.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCError.swift",
       "kind": "StringLiteral",
       "offset": 1063,
       "length": 17,
       "value": "\"Request timeout\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCError.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCError.swift",
       "kind": "StringLiteral",
       "offset": 1168,
       "length": 21,
       "value": "\"SDK not initialized\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCEvent.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCEvent.swift",
       "kind": "StringLiteral",
       "offset": 1016,
       "length": 5,
       "value": "\"ios\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 1314,
       "length": 12,
       "value": "\"initialize\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 1939,
       "length": 30,
       "value": "\"registerSessionReadyListener\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 2096,
       "length": 32,
       "value": "\"unregisterSessionReadyListener\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 2239,
       "length": 16,
       "value": "\"isSessionReady\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 2392,
       "length": 21,
       "value": "\"handleLaunchOptions\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 3301,
       "length": 28,
       "value": "\"registerConversionListener\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 3480,
       "length": 26,
       "value": "\"registerDeeplinkListener\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 3628,
       "length": 9,
       "value": "\"isDebug\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 3870,
       "length": 7,
       "value": "\"start\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 4177,
       "length": 10,
       "value": "\"logEvent\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 4812,
       "length": 19,
       "value": "\"setCustomerUserId\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 5105,
       "length": 19,
       "value": "\"setAdditionalData\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 5389,
       "length": 17,
       "value": "\"setCurrencyCode\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 5707,
       "length": 34,
       "value": "\"setDisableAdvertisingIdentifiers\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 5971,
       "length": 23,
       "value": "\"setDisableSKAdNetwork\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 6229,
       "length": 28,
       "value": "\"setShouldCollectDeviceName\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 6487,
       "length": 21,
       "value": "\"setAppInviteOneLink\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 6749,
       "length": 15,
       "value": "\"anonymizeUser\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 7005,
       "length": 22,
       "value": "\"setDisableCollectASA\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 7301,
       "length": 31,
       "value": "\"setDisableAppleAdsAttribution\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 7607,
       "length": 32,
       "value": "\"setUseReceiptValidationSandbox\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 7870,
       "length": 24,
       "value": "\"setUseUninstallSandbox\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 8127,
       "length": 26,
       "value": "\"setDisableIDFVCollection\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 8386,
       "length": 26,
       "value": "\"setCurrentDeviceLanguage\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 8683,
       "length": 17,
       "value": "\"getAppsFlyerUID\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 8810,
       "length": 15,
       "value": "\"getSdkVersion\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 8933,
       "length": 13,
       "value": "\"getHostName\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 9056,
       "length": 15,
       "value": "\"getHostPrefix\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 9177,
       "length": 11,
       "value": "\"isStopped\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 9384,
       "length": 34,
       "value": "\"appendParametersToDeepLinkingURL\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 10288,
       "length": 33,
       "value": "\"addPushNotificationDeepLinkPath\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 11013,
       "length": 32,
       "value": "\"enableFacebookDeferredApplinks\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 11281,
       "length": 28,
       "value": "\"setFacebookDeferredAppLink\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 11786,
       "length": 15,
       "value": "\"handleOpenURL\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 12102,
       "length": 15,
       "value": "\"handleOpenUrl\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 12404,
       "length": 22,
       "value": "\"continueUserActivity\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 12798,
       "length": 24,
       "value": "\"handlePushNotification\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 13182,
       "length": 19,
       "value": "\"registerUninstall\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 14495,
       "length": 20,
       "value": "\"performDeepLinking\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 14731,
       "length": 13,
       "value": "\"logLocation\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 16309,
       "length": 24,
       "value": "\"setResolveDeepLinkURLs\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 16983,
       "length": 24,
       "value": "\"setOneLinkCustomDomain\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 17674,
       "length": 9,
       "value": "\"setHost\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 18419,
       "length": 27,
       "value": "\"setMinTimeBetweenSessions\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 18682,
       "length": 20,
       "value": "\"setDeepLinkTimeout\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 18932,
       "length": 14,
       "value": "\"setInstallId\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 19304,
       "length": 29,
       "value": "\"setSharingFilterForPartners\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 19957,
       "length": 16,
       "value": "\"setPartnerData\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 20732,
       "length": 6,
       "value": "\"stop\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 20984,
       "length": 16,
       "value": "\"setConsentData\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 21911,
       "length": 25,
       "value": "\"enableTCFDataCollection\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 22513,
       "length": 29,
       "value": "\"validateAndLogInAppPurchase\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 22751,
       "length": 14,
       "value": "\"subscription\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 22790,
       "length": 17,
       "value": "\"oneTimePurchase\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 24816,
       "length": 14,
       "value": "\"logAdRevenue\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 25109,
       "length": 13,
       "value": "\"googleadmob\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 25146,
       "length": 12,
       "value": "\"ironsource\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 25181,
       "length": 13,
       "value": "\"applovinmax\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 25218,
       "length": 7,
       "value": "\"fyber\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 25243,
       "length": 10,
       "value": "\"appodeal\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 25274,
       "length": 8,
       "value": "\"admost\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 25301,
       "length": 7,
       "value": "\"topon\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 25326,
       "length": 10,
       "value": "\"tradplus\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 25357,
       "length": 8,
       "value": "\"yandex\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 25384,
       "length": 12,
       "value": "\"chartboost\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 25419,
       "length": 7,
       "value": "\"unity\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 25444,
       "length": 10,
       "value": "\"toponpte\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 25475,
       "length": 8,
       "value": "\"custom\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
       "offset": 25502,
       "length": 20,
       "value": "\"directmonetization\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 27067,
+      "offset": 25553,
+      "length": 17,
+      "value": "\"googleadmanager\""
+    },
+    {
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 25598,
+      "length": 8,
+      "value": "\"cloudx\""
+    },
+    {
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "kind": "StringLiteral",
+      "offset": 27139,
       "length": 15,
       "value": "\"setPluginInfo\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "Dictionary",
-      "offset": 27225,
+      "offset": 27297,
       "length": 392,
       "value": "[(\"ios_native\", 0), (\"unity\", 1), (\"flutter\", 2), (\"react_native\", 3), (\"adobe_air\", 4), (\"adobe_mobile\", 5), (\"cocos2dx\", 6), (\"cordova\", 7), (\"mparticle\", 8), (\"native_script\", 9), (\"expo\", 10), (\"unreal\", 11), (\"xamarin\", 12), (\"capacitor\", 13), (\"segment\", 14), (\"adobe_swift_aep\", 15)]"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 29277,
+      "offset": 29349,
       "length": 27,
       "value": "\"logCrossPromoteImpression\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 29710,
+      "offset": 29782,
       "length": 17,
       "value": "\"logAndOpenStore\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 30169,
+      "offset": 30241,
       "length": 20,
       "value": "\"generateInviteLink\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 31321,
+      "offset": 31393,
       "length": 11,
       "value": "\"logInvite\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 31647,
+      "offset": 31719,
       "length": 14,
       "value": "\"setUserEmail\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 31885,
+      "offset": 31957,
       "length": 14,
       "value": "\"setUserPhone\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 32269,
+      "offset": 32341,
       "length": 18,
       "value": "\"setUserFirstName\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 32526,
+      "offset": 32598,
       "length": 17,
       "value": "\"setUserLastName\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 32780,
+      "offset": 32852,
       "length": 18,
       "value": "\"setUserFbLoginId\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCTypedRequests.swift",
       "kind": "StringLiteral",
-      "offset": 33052,
+      "offset": 33124,
       "length": 14,
       "value": "\"clearUserPii\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/RPCParamHelpers.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/RPCParamHelpers.swift",
       "kind": "Array",
       "offset": 798,
       "length": 50,
       "value": "[\"javascript\", \"data\", \"vbscript\", \"blob\", \"file\"]"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/RPCParamHelpers.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/RPCParamHelpers.swift",
       "kind": "StringLiteral",
       "offset": 1746,
       "length": 5,
       "value": "\"url\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCParser.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCParser.swift",
       "kind": "IntegerLiteral",
       "offset": 406,
       "length": 9,
       "value": "1048576"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCResponseEncoder.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCResponseEncoder.swift",
       "kind": "StringLiteral",
       "offset": 599,
       "length": 96,
       "value": "\"{\"id\":null,\"error\":{\"code\":500,\"message\":\"Internal encoding error\"},\"result\":null}\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCResponseEncoder.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/AFRPCResponseEncoder.swift",
       "kind": "StringLiteral",
       "offset": 743,
       "length": 92,
       "value": "\"{\"event\":\"error\",\"data\":{\"message\":\"Failed to encode event\"},\"origin\":\"ios\"}\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/RPCQueue.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/RPCQueue.swift",
       "kind": "IntegerLiteral",
       "offset": 519,
       "length": 3,
       "value": "256"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/RPCQueue.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Core\/RPCQueue.swift",
       "kind": "StringLiteral",
       "offset": 778,
       "length": 36,
       "value": "\"com.appsflyer.rpc.queue.completion\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/State\/AFRPCHandlerStateActor.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/State\/AFRPCHandlerStateActor.swift",
       "kind": "BooleanLiteral",
       "offset": 804,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/State\/AFRPCHandlerStateActor.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/State\/AFRPCHandlerStateActor.swift",
       "kind": "BooleanLiteral",
       "offset": 854,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "BooleanLiteral",
       "offset": 1181,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "FloatLiteral",
       "offset": 2045,
       "length": 4,
       "value": "10.0"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "FloatLiteral",
       "offset": 5370,
       "length": 4,
       "value": "30.0"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "FloatLiteral",
       "offset": 5545,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "FloatLiteral",
       "offset": 5568,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "FloatLiteral",
       "offset": 5591,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "FloatLiteral",
       "offset": 5620,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Utilities\/SDKTimeoutHelper.swift",
       "kind": "FloatLiteral",
       "offset": 5646,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Delegates\/AFRPCRequestHandlerDelegates.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Delegates\/AFRPCRequestHandlerDelegates.swift",
       "kind": "StringLiteral",
       "offset": 6350,
       "length": 20,
       "value": "\"onDeepLinkReceived\""
     },
     {
-      "filePath": "\/var\/tmp\/builds\/mobile\/ios\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Handlers\/AFRPCMonetizationHandler.swift",
+      "filePath": "\/Users\/Amit.Levy\/SDK\/iOS\/core\/appsflyer.sdk.ios\/AppsFlyerRPC\/AppsFlyerRPC\/Handler\/Handlers\/AFRPCMonetizationHandler.swift",
       "kind": "StringLiteral",
       "offset": 159,
       "length": 14,
