@@ -17,13 +17,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AppsFlyerRPC",
-            url: "https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/releases/download/7.0.13/AppsFlyerRPC-static.xcframework.zip",
-            checksum: "e6ab48450c2f2bec204a8f6298e4b5859db6bf8232819b388d741aea59c567d1"
+            url: "https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/releases/download/7.0.4/AppsFlyerRPC-static.xcframework.zip",
+            checksum: "d8d70a75f97d0633e56ef7ae00d4254d3e88c00a9e809d05d2f7be63b010d528"
         ),
         .binaryTarget(
             name: "AppsFlyerRPCStrict",
-            url: "https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/releases/download/7.0.13/AppsFlyerRPC-strict.xcframework.zip",
-            checksum: "27de360d0aaed995fcf33bc220ff5cb24dbbbb5a54ea009cdfda78aca7edc35e"
+            url: "https://github.com/AppsFlyerSDK/appsflyer-apple-rpc/releases/download/7.0.4/AppsFlyerRPC-strict.xcframework.zip",
+            checksum: "64b539712ab312a4cc3f0caa7a8be43dcbb4773b47e1dbb657c75054930db264"
         )
     ]
 )
